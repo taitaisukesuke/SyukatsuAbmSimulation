@@ -7,7 +7,7 @@ public class Agent {
     Set< Agent> connectedList ;
     AgentGroup myGroup;
     ArrayList<Belief> beliefs;
-    ArrayList<Apeal> apeals;
+    ArrayList<Appeal> appeals;
     ArrayList<Performance> performances;
     ArrayList<Talent> talents;
     double p;
