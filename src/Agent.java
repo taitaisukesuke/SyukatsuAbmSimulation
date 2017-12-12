@@ -1,12 +1,16 @@
 import java.util.ArrayList;
 import java.util.HashSet;
-
+import java.util.Set;
 
 
 public class Agent {
-    Set<int Agent> connectedList = new HashSet<>();
+    Set< Agent> connectedList ;
     AgentGroup myGroup;
-    ArrayList<AgentGroup> connectedGroup = new ArrayList<AgentGroup>();
+    ArrayList<Belief> beliefs;
+    ArrayList<Apeal> apeals;
+    ArrayList<Performance> performances;
+    ArrayList<Talent> talents;
+    double p;
 
 
     public Agent() {
@@ -19,8 +23,13 @@ public class Agent {
         //3.opponentと自分をreturn
     }
 
-    public void makeCluster(){
-
+    public void UpdateMyBelief(Agent agent){
+        //learningする
     }
+
+    private Agent findChampion(){
+        //コネクトしてる中で一番優秀な人
+    }
+
 
 }
