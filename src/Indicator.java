@@ -12,6 +12,12 @@ class Indicator{
 
         int ran = (10);
         System.out.println(ran);
+
+        //未完成です。
+    }
+
+    public int evaluate(int apeal){
+
     }
 
 }
