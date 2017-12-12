@@ -3,16 +3,14 @@ import java.util.ArrayList;
 
 
 class Indicator{
-    private static final int[] choices={0,1}
-    private final int weight =0;
+    private int weight;
+    private static final int[] choices={0,1};
+
 
     public  Indicator(){
         Random rnd = new Random();
-
-
-        int ran = (10);
-        System.out.println(ran);
-
+        int num=rnd.nextInt(2);
+        this.weight=choices[num];
         //未完成です。
     }
 
