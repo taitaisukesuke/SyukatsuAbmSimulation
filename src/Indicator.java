@@ -3,20 +3,13 @@ import java.util.ArrayList;
 
 
 class Indicator{
-<<<<<<< HEAD
-    private static final int[] choices={0,1};
-    private final int weight =0;
-=======
-    private int weight;
-    private static final int[] choices={0,1};
-
->>>>>>> 1847aaffa81b85c4a151640149852bf037999528
+    private static final int[] choices = {0,1};
+    private  int weight = 0;
 
     public  Indicator(){
         Random rnd = new Random();
-        int num=rnd.nextInt(2);
-        this.weight=choices[num];
-        //未完成です。
+        int num = rnd.nextInt(2);
+        this.weight = choices[num];
     }
 
     public int evaluate(Performance performance)
