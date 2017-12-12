@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 
@@ -58,7 +59,21 @@ public class Agent {
     }
 
 
-    public Agent(){
+    public Agent(int agentId, int capacity){
+        this.agentId = agentId;
+        this.confidences = new ArrayList<Confidence>(capacity);
+        this.believes = new ArrayList<Belief>(capacity);
+        this.talents = new ArrayList<Talent>(capacity);
+        this.appeals = new ArrayList<Appeal>(capacity);
+        this.performances = new ArrayList<Performance>(capacity);
+        for(int index = 0;index<capacity;index++){
+            this.confidences.add(new Confidence());
+            this.believes.add(new Belief());
+            this.talents.add(new Talent());
+            this.appeals.add(new Appeal(this.believes.get(index),this.confidences.get(index)));
+            this.performances.add(new Performance(/*Talent, Appealが必要では？*/));
+        }
+
 
     }
 
@@ -96,17 +111,17 @@ public class Agent {
     public void updateMyBelieves(){
         Agent champion = findChampion();
         for(int index = 0;index<confidences.size();index++){
-            if (champion.getTalents().get(index) == 1 && champion.getBelieves().get(index) == 1) {
-                this.believes.add(index, 1);
-            } else if (champion.getTalents().get(index) == -1 && champion.getBelieves().get(index) == 1) {
-                this.believes.add(index, 0);
+            if (champion.getTalents().get(index).getValue() == 1 && champion.getBelieves().get(index).getValue() == 1) {
+
+                this.believes.get(index).setValue(1);
+            }else if(champion.getTalents().get(index).getValue() == -1 && champion.getBelieves().get(index).getValue() == 1) {
+                this.believes.get(index).setValue(0);
             }
         }
     }
 
     @Override
     public boolean equals(Object o) {
-
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Agent agent = (Agent) o;

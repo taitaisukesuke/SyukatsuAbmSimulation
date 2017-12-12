@@ -6,12 +6,12 @@ public class AgentGroup {
     float beta;
     int id;
 
-    public AgentGroup(int agentsNum,float beta,int id){
+    public AgentGroup(int agentsNum,float beta,int id, int agentCapacity){
         this.agentsNum=agentsNum;
         this.beta=beta;
         this.id=id;
         for(int i=0;i<agentsNum;i++){
-            agents.add(new Agent());
+            agents.add(new Agent(i, agentCapacity));
         }
     }
 
