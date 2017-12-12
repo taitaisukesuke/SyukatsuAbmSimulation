@@ -81,12 +81,21 @@ public class Agent {
     }
 
     public Agent findChampion(){
-        return new Agent();
+        Agent champion= null;
+        Agent[] agents = (Agent[]) connectedList.toArray();
+        for(int i=0;i<agents.length;i++){
+            if(champion==null){
+                champion=agents[i];
+            }else if(champion.getScore()<agents[i].getScore()){
+                champion=agents[i];
+            }
+        }
+        return champion;
     }
 
     public void updateMyBelieves(){
         Agent champion = findChampion();
-        for(int index = 0;inedx<confidences.size();index++){
+        for(int index = 0;index<confidences.size();index++){
             if (champion.getTalents().get(index) == 1 && champion.getBelieves().get(index) == 1) {
                 this.believes.add(index, 1);
             } else if (champion.getTalents().get(index) == -1 && champion.getBelieves().get(index) == 1) {
