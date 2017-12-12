@@ -4,32 +4,108 @@ import java.util.Set;
 
 
 public class Agent {
-    Set< Agent> connectedList ;
+    HashSet< Agent> connectedList = new HashSet<>();
     AgentGroup myGroup;
-    ArrayList<Belief> beliefs;
-    ArrayList<Apeal> apeals;
-    ArrayList<Performance> performances;
+    int agentId;
+    ArrayList<Confidence> confidences;
+    ArrayList<Belief> believes;
     ArrayList<Talent> talents;
-    double p;
+    ArrayList<Appeal> appeals;
+    ArrayList<Performance> performances;
+    int score = 0;
 
 
-    public Agent() {
+    public ArrayList<Confidence> getConfidences() {
+        return confidences;
+    }
+    public void setConfidences(ArrayList<Confidence> confidences) {
+        this.confidences = confidences;
+    }
+
+    public ArrayList<Belief> getBelieves() {
+        return believes;
+    }
+    public void setBelieves(ArrayList<Belief> believes) {
+        this.believes = believes;
+    }
+
+    public ArrayList<Talent> getTalents() {
+        return talents;
+    }
+    public void setTalents(ArrayList<Talent> talents) {
+        this.talents = talents;
+    }
+
+    public ArrayList<Appeal> getAppeals() {
+        return appeals;
+    }
+    public void setAppeals(ArrayList<Appeal> appeals) {
+        this.appeals = appeals;
+    }
+
+    public ArrayList<Performance> getPerformances() {
+        return performances;
+    }
+    public void setPerformances(ArrayList<Performance> performances) {
+        this.performances = performances;
+    }
+
+    public int getScore() {
+        return score;
+    }
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+
+    public Agent(){
 
     }
 
     public Agent[] connect(Agent opponent) {
+        connectedList.add(opponent);
         //1.opponentをconnectedListに加える
+        opponent.connect(this);
         //2.opponent側のconnect関数も発動
+        Agent[] connectedAgents = {opponent,this};
+        return connectedAgents;
         //3.opponentと自分をreturn
     }
 
-    public void UpdateMyBelief(Agent agent){
-        //learningする
+    public AgentGroup getMyGroup() {
+        return myGroup;
     }
 
-    private Agent findChampion(){
-        //コネクトしてる中で一番優秀な人
+    public int getAgentId() {
+        return agentId;
     }
 
+    public Agent findChampion(){
+        return new Agent();
+    }
 
+    public void updateMyBelieves(){
+        Agent champion = findChampion();
+        for(int index = 0;inedx<confidences.size();index++){
+            if (champion.getTalents().get(index) == 1 && champion.getBelieves().get(index) == 1) {
+                this.believes.add(index, 1);
+            } else if (champion.getTalents().get(index) == -1 && champion.getBelieves().get(index) == 1) {
+                this.believes.add(index, 0);
+            }
+        }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Agent agent = (Agent) o;
+        return agentId == agent.agentId;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(agentId);
+    }
 }
