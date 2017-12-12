@@ -1,17 +1,17 @@
 import java.util.ArrayList;
 
 public class AgentGroup {
-    ArrayList<Agent> agents = new ArrayList<>();
+    ArrayList<Agent> agents=new ArrayList<>() ;
     int agentsNum;
     float beta;
     int id;
 
-    public AgentGroup(int agentsNum, float beta, int id) {
-        this.agentsNum = agentsNum;
-        this.beta = beta;
-        this.id = id;
-        for (int i = 0; i < agentsNum; i++) {
-            agents.add(new Agent());
+    public AgentGroup(int agentsNum,float beta,int id, int agentCapacity){
+        this.agentsNum=agentsNum;
+        this.beta=beta;
+        this.id=id;
+        for(int i=0;i<agentsNum;i++){
+            agents.add(new Agent(i, agentCapacity));
         }
     }
 
@@ -49,13 +49,13 @@ public class AgentGroup {
 
     public ArrayList<Agent> pickupAgentswithBeta() {
         int a;
-        ArrayList<Agent> pickupAgents = new ArrayList<>();
-        a = (int) (this.agentsNum * this.beta);
-        for (int i = 0; i < a; i++) {
-            while (true) {
+        ArrayList<Agent> pickupAgents=new ArrayList<>();
+        a= (int) (this.agentsNum * this.beta);
+        for(int i=0;i<a;i++) {
+            while(true){
                 int random = new java.util.Random().nextInt(agentsNum);
 
-                if (!pickupAgents.contains(agents.get(random))) {
+                if(!pickupAgents.contains(agents.get(random))){
                     pickupAgents.add(agents.get(random));
                     break;
                 }
@@ -69,9 +69,9 @@ public class AgentGroup {
 
     }
 
-    public void connectAllAgents() {
-        for (int i = 0; i < getAgents().size(); i++) {
-            for (int j = 0; i < getAgents().size(); j++) {
+    public void connectAllAgents(){
+        for(int i=0;i<getAgents().size();i++){
+            for(int j=0;i<getAgents().size();j++){
                 agents.get(i).connect(agents.get(j));
             }
 
@@ -85,5 +85,11 @@ public class AgentGroup {
         if (o == null || getClass() != o.getClass()) return false;
         AgentGroup that = (AgentGroup) o;
         return id == that.id;
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(id);
     }
 }
