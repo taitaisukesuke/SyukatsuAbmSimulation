@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ABM/ABM.iml" filepath="$PROJECT_DIR$/ABM/ABM.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ABM.iml" filepath="$PROJECT_DIR$/ABM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SyukatsuAbmSimularion.iml" filepath="$PROJECT_DIR$/SyukatsuAbmSimularion.iml" />
     </modules>
   </component>
 </project>
