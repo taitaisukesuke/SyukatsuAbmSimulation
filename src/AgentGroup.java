@@ -11,7 +11,7 @@ public class AgentGroup {
         this.beta=beta;
         this.id=id;
         for(int i=0;i<agentsNum;i++){
-            agents.add(new Agent(i, agentCapacity));
+            agents.add(new Agent(i, agentCapacity,this));
         }
     }
 
@@ -47,7 +47,7 @@ public class AgentGroup {
         this.id = id;
     }
 
-    public ArrayList<Agent> pickupAgentswithBeta() {
+    public ArrayList<Agent> pickupAgentsWithBeta() {
         int a;
         ArrayList<Agent> pickupAgents=new ArrayList<>();
         a= (int) (this.agentsNum * this.beta);
@@ -71,7 +71,7 @@ public class AgentGroup {
 
     public void connectAllAgents(){
         for(int i=0;i<getAgents().size();i++){
-            for(int j=0;i<getAgents().size();j++){
+            for(int j=0;j<getAgents().size();j++){
                 agents.get(i).connect(agents.get(j));
             }
 
@@ -85,11 +85,5 @@ public class AgentGroup {
         if (o == null || getClass() != o.getClass()) return false;
         AgentGroup that = (AgentGroup) o;
         return id == that.id;
-    }
-
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(id);
     }
 }
