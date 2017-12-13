@@ -8,28 +8,24 @@ public class Agent {
     ArrayList<Agent> connectedList = new ArrayList<>();
     AgentGroup myGroup;
     int agentId;
-    ArrayList<Confidence> confidences;
-    ArrayList<Belief> believes;
-    ArrayList<Talent> talents;
-    ArrayList<Appeal> appeals;
-    ArrayList<Performance> performances;
+    ArrayList<Confidence> confidences = new ArrayList<Confidence>();
+    ArrayList<Belief> believes = new ArrayList<Belief>();
+    ArrayList<Talent> talents = new ArrayList<Talent>();
+    ArrayList<Appeal> appeals = new ArrayList<Appeal>();
+    ArrayList<Performance> performances = new ArrayList<Performance>();
     int score = 0;
 
 
-    public Agent(int agentId, int capacity,AgentGroup parentGroup){
+    public Agent(int agentId, int capacity, AgentGroup myGroup){
         this.agentId = agentId;
-        this.confidences = new ArrayList<Confidence>(capacity);
-        this.believes = new ArrayList<Belief>(capacity);
-        this.talents = new ArrayList<Talent>(capacity);
-        this.appeals = new ArrayList<Appeal>(capacity);
-        this.performances = new ArrayList<Performance>(capacity);
-        this.myGroup = parentGroup;
+        this.myGroup = myGroup;
 
         for(int index = 0;index < capacity;index++){
-           addRandomProperties(index);
+            addRandomProperties(index);
         }
-
     }
+
+
 
     private void addRandomProperties(int index){
         this.confidences.add(new Confidence());
@@ -82,6 +78,7 @@ public class Agent {
     }
 
 
+
     /**
      * テスト用ゲッター
      * @return connectedList
@@ -126,17 +123,26 @@ public class Agent {
     }
 
 
-    //TODO: アップデート確率の実装？
+    public int sumConfidences(){
+        int sumConfidences = 0;
+        for(Confidence confidence : this.confidences){
+            sumConfidences += confidence.getValue();
+        }
+        return sumConfidences;
+    }
+
     public void updateMyBelieves(){
         Agent champion = findChampion();
-        for(int index = 0;index<confidences.size();index++){
-            int talent =champion.getTalents().get(index).getValue();
-            int belief = champion.getBelieves().get(index).getValue();
-
-            if (talent == 1 && belief  == 1) {
-                this.believes.get(index).setValue(1);
-            }else if(talent == -1 && belief == 1) {
-                this.believes.get(index).setValue(0);
+        int sumConfidences = this.sumConfidences();
+        double learningProb = sumConfidences / this.confidences.size();
+        double p = Math.random();
+        if(p>=learningProb){
+            for(int index = 0;index<confidences.size();index++){
+                if (champion.getTalents().get(index).getValue() == 1 && champion.getBelieves().get(index).getValue() == 1) {
+                    this.believes.get(index).setValue(1);
+                }else if(champion.getTalents().get(index).getValue() == -1 && champion.getBelieves().get(index).getValue() == 1) {
+                    this.believes.get(index).setValue(0);
+                }
             }
         }
     }
