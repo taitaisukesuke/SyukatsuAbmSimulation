@@ -8,11 +8,11 @@ public class Agent {
     HashSet< Agent> connectedList = new HashSet<>();
     AgentGroup myGroup;
     int agentId;
-    ArrayList<Confidence> confidences;
-    ArrayList<Belief> believes;
-    ArrayList<Talent> talents;
-    ArrayList<Appeal> appeals;
-    ArrayList<Performance> performances;
+    ArrayList<Confidence> confidences = new ArrayList<Confidence>();
+    ArrayList<Belief> believes = new ArrayList<Belief>();
+    ArrayList<Talent> talents = new ArrayList<Talent>();
+    ArrayList<Appeal> appeals = new ArrayList<Appeal>();
+    ArrayList<Performance> performances = new ArrayList<Performance>();
     int score = 0;
 
 
@@ -59,13 +59,9 @@ public class Agent {
     }
 
 
-    public Agent(int agentId, int capacity){
+    public Agent(int agentId, int capacity, AgentGroup myGroup){
         this.agentId = agentId;
-        this.confidences = new ArrayList<Confidence>(capacity);
-        this.believes = new ArrayList<Belief>(capacity);
-        this.talents = new ArrayList<Talent>(capacity);
-        this.appeals = new ArrayList<Appeal>(capacity);
-        this.performances = new ArrayList<Performance>(capacity);
+        this.myGroup = myGroup;
         for(int index = 0;index<capacity;index++){
             this.confidences.add(new Confidence());
             this.believes.add(new Belief());
@@ -73,8 +69,6 @@ public class Agent {
             this.appeals.add(new Appeal(this.believes.get(index),this.confidences.get(index)));
             this.performances.add(new Performance(/*Talent, Appealが必要では？*/));
         }
-
-
     }
 
     public Agent[] connect(Agent opponent) {
@@ -85,6 +79,9 @@ public class Agent {
         Agent[] connectedAgents = {opponent,this};
         return connectedAgents;
         //3.opponentと自分をreturn
+    }
+    public Boolean isConnected(Agent agent){
+        return connectedList.contains(agent);
     }
 
     public AgentGroup getMyGroup() {
@@ -108,14 +105,26 @@ public class Agent {
         return champion;
     }
 
+    public int sumConfidences(){
+        int sumConfidences = 0;
+        for(Confidence confidence : this.confidences){
+            sumConfidences += confidence.getValue();
+        }
+        return sumConfidences;
+    }
+
     public void updateMyBelieves(){
         Agent champion = findChampion();
-        for(int index = 0;index<confidences.size();index++){
-            if (champion.getTalents().get(index).getValue() == 1 && champion.getBelieves().get(index).getValue() == 1) {
-
-                this.believes.get(index).setValue(1);
-            }else if(champion.getTalents().get(index).getValue() == -1 && champion.getBelieves().get(index).getValue() == 1) {
-                this.believes.get(index).setValue(0);
+        int sumConfidences = this.sumConfidences();
+        double learningProb = sumConfidences / this.confidences.size();
+        double p = Math.random();
+        if(p>=learningProb){
+            for(int index = 0;index<confidences.size();index++){
+                if (champion.getTalents().get(index).getValue() == 1 && champion.getBelieves().get(index).getValue() == 1) {
+                    this.believes.get(index).setValue(1);
+                }else if(champion.getTalents().get(index).getValue() == -1 && champion.getBelieves().get(index).getValue() == 1) {
+                    this.believes.get(index).setValue(0);
+                }
             }
         }
     }

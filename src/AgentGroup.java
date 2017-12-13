@@ -11,7 +11,7 @@ public class AgentGroup {
         this.beta=beta;
         this.id=id;
         for(int i=0;i<agentsNum;i++){
-            agents.add(new Agent(i, agentCapacity));
+            agents.add(new Agent(i, agentCapacity, this));
         }
     }
 
