@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class Confidence {
-    int value;
+    private final int value;
     private static final int[] nums={0,1};
 
     public Confidence(){
@@ -14,7 +14,4 @@ public class Confidence {
         return value;
     }
 
-    public void setValue(int value) {
-        this.value = value;
-    }
 }

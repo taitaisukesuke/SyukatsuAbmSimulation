@@ -7,10 +7,7 @@ public class Main{
     public static final float BETA = 0.3f;
     public static final int UPDATE_NUM =100;
 
-
     private AgentGroup[] agentGroups;
-
-
     public AgentGroup[] getAgentGroups() {
         return agentGroups;
     }
@@ -30,7 +27,6 @@ public class Main{
 
     Main(int agentGroupNum,int agentNum,float beta){
         agentGroups=new AgentGroup[agentGroupNum];
-
         for(int i =0;i<agentGroups.length;i++){
             agentGroups[i]= new AgentGroup(agentNum,beta,i,agentNum);
         }

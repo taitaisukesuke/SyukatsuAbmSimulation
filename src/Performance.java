@@ -1,7 +1,7 @@
 public class Performance {
     private int value;
     private Appeal appeal;
-    private  Talent talent;
+    private final Talent talent;
 
     public Performance(Appeal appeal,Talent talent){
         this.appeal=appeal;
@@ -21,9 +21,6 @@ public class Performance {
 
     public void setAppeal(Appeal appeal) {
         this.appeal = appeal;
-    }
-    public void setTalent(Talent talent) {
-        this.talent = talent;
     }
     public void setValue(int value) {
         this.value = value;

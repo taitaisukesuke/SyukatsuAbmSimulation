@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 class Indicator{
     private static final int[] choices = {0,1};
-    private  int weight;
+    private final int weight;
 
     public  Indicator(){
         Random rnd = new Random();
@@ -15,7 +15,7 @@ class Indicator{
     public int evaluate(Performance performance)
     {
         int result;
-        result=performance.value*weight;
+        result=performance.getValue()*weight;
         return result;
     }
 

@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class AgentGroup {
     ArrayList<Agent> agents=new ArrayList<>() ;
-    int agentsNum;
-    float beta;
-    int id;
+    private final int agentsNum;
+    private final float beta;
+    private final int id;
 
     public AgentGroup(int agentsNum,float beta,int id, int agentCapacity){
         this.agentsNum=agentsNum;
@@ -18,34 +18,16 @@ public class AgentGroup {
     public ArrayList<Agent> getAgents() {
         return agents;
     }
-
-    public void setAgents(ArrayList<Agent> agents) {
-        this.agents = agents;
-    }
-
     public int getAgentsNum() {
         return agentsNum;
     }
-
-    public void setAgentsNum(int agentsNum) {
-        this.agentsNum = agentsNum;
-    }
-
     public float getBeta() {
         return beta;
     }
-
-    public void setBeta(float beta) {
-        this.beta = beta;
-    }
-
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public ArrayList<Agent> pickupAgentsWithBeta() {
         int a;
@@ -60,13 +42,8 @@ public class AgentGroup {
                     break;
                 }
             }
-
-
         }
         return pickupAgents;
-
-        //βに基づいてエージェントを選ぶ関数
-
     }
 
     public void connectAllAgents(){

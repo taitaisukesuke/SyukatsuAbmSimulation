@@ -1,19 +1,30 @@
 public class Appeal {
     private int  value;
-    private Belief b;
-    private  Confidence c;
+    private Belief belief;
+    private  Confidence confidence;
 
-    public Appeal(Belief b,Confidence c){
-        this.b=b;
-        this.c=c;
+
+
+    public Appeal(){
+        this.confidence = new Confidence();
+        this.belief = new Belief();
     }
 
     public int getValue() {
-        value=this.b.getValue()+this.c.getValue();
+        value=this.belief.getValue()+this.confidence.getValue();
         return value;
     }
 
-    public void setValue(int value) {
-        this.value = value;
+
+    public Belief getBelief() {
+        return belief;
+    }
+
+    public void setBelief(Belief belief) {
+        this.belief = belief;
+    }
+
+    public Confidence getConfidence() {
+        return confidence;
     }
 }

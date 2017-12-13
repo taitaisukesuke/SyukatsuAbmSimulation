@@ -15,8 +15,8 @@ class Company{
         int result =0;
         for(int i=0;i<this.indicators.length;i++)
         {
-            indicators[i].evaluate(agent.performances.get(i));
-            result=result+indicators[i].evaluate(agent.performances.get(i));
+            indicators[i].evaluate(agent.getPerformances().get(i));
+            result=result+indicators[i].evaluate(agent.getPerformances().get(i));
         }
         return result;
     }
