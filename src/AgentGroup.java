@@ -13,6 +13,8 @@ public class AgentGroup {
         for(int i=0;i<agentsNum;i++){
             agents.add(new Agent(i, agentCapacity,this));
         }
+
+        connectAllAgents();
     }
 
     public ArrayList<Agent> getAgents() {
@@ -55,6 +57,12 @@ public class AgentGroup {
         }
     }//自分のグループに属するエージェントとつながる(connect関数)
 
+
+    public void learningAllAgents(){
+        for(Agent agent :agents){
+           agent.updateMyBelieves();
+        }
+    }
 
     @Override
     public boolean equals(Object o) {

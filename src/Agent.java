@@ -35,8 +35,8 @@ public class Agent {
         return performances.get(num).getAppeal().getBelief();
     }
 
-    public void setBelief(int num,Belief belief){
-        performances.get(num).getAppeal().setBelief(belief);
+    public void setBelief(int num,int value){
+        performances.get(num).setBelief(new Belief(value));
     }
 
     public List<Talent> getTalents() {
@@ -86,7 +86,10 @@ public class Agent {
             connectedList.add(opponent);
             //1.opponentをconnectedListに加える
             opponent.connect(this);
+
             //2.opponent側のconnect関数も発動
+
+            System.out.println(this.getMyGroup().getId()+","+this.getAgentId()+"connected" + opponent.getMyGroup().getId()+","+opponent.getAgentId());
             return new Agent[]{this,opponent};
             //3.opponentと自分をreturn
         }else{
@@ -98,12 +101,16 @@ public class Agent {
 
     public Agent findChampion(){
         Agent champion= null;
+
         for(int i=0;i<connectedList.size();i++){
-            if(champion==null){
-                champion=connectedList.get(i);
-            }else if(champion.getScore()<connectedList.get(i).getScore()){
-                champion=connectedList.get(i);
+            if(this.getScore()<connectedList.get(i).getScore()){
+                if(champion==null){
+                    champion=connectedList.get(i);
+                }else if(champion.getScore() < connectedList.get(i).getScore()){
+                    champion=connectedList.get(i);
+                }
             }
+
         }
         return champion;
     }
@@ -119,21 +126,36 @@ public class Agent {
 
     public void updateMyBelieves(){
         Agent champion = findChampion();
-        int sumConfidences = this.sumConfidences();
-        double learningProb = sumConfidences / this.getConfidences().size();
+        if(champion!=null){
+            int sumConfidences = this.sumConfidences();
+            double learningProb = (double) sumConfidences / this.getConfidences().size();
+            System.out.println(learningProb);
+            //ForTest
+            int count = 0;
 
-        double p = Math.random();
-
-        if( p >= learningProb ){
             for(int index = 0;index< this.getConfidences().size();index++){
+                double p = Math.random();
 
-                if (champion.getTalent(index).getValue() == 1 && champion.getBelief(index).getValue() == 1) {
-                    this.getBelief(index).setValue(1);
-                }else if(champion.getTalent(index).getValue() == -1 && champion.getBelief(index).getValue() == 1) {
-                    this.getBelief(index).setValue(0);
+                if( p >= learningProb ){
+                    if (champion.getTalent(index).getValue() == 1 && champion.getBelief(index).getValue() == 1) {
+                        this.setBelief(index,1);
+                        count++;
+                    }else if(champion.getTalent(index).getValue() == -1 && champion.getBelief(index).getValue() == 1) {
+                        this.setBelief(index,0);
+                        count++;
+                    }
                 }
             }
+
+            System.out.println(count+"個アップデート");
         }
+
+
+
+
+
+
+
     }
 
     public boolean isConnected(Agent agent){

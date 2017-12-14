@@ -10,6 +10,10 @@ public class Belief {
         this.value=nums[i];
     }
 
+    public Belief(int value){
+        this.value = value;
+    }
+
     public int getValue() {
         return value;
     }

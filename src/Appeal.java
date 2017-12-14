@@ -1,5 +1,4 @@
 public class Appeal {
-    private int  value;
     private Belief belief;
     private  Confidence confidence;
 
@@ -11,8 +10,7 @@ public class Appeal {
     }
 
     public int getValue() {
-        value=this.belief.getValue()+this.confidence.getValue();
-        return value;
+       return this.belief.getValue() + this.confidence.getValue();
     }
 
 

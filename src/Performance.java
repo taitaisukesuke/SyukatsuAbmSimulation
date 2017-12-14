@@ -1,12 +1,10 @@
 public class Performance {
-    private int value;
     private Appeal appeal;
     private final Talent talent;
 
     public Performance(Appeal appeal,Talent talent){
         this.appeal=appeal;
         this.talent=talent;
-        this.value = appeal.getValue()*talent.getValue();
     }
 
     public Appeal getAppeal() {
@@ -16,14 +14,15 @@ public class Performance {
         return talent;
     }
     public int getValue() {
-        return value;
+        return  appeal.getValue()*talent.getValue();
     }
 
     public void setAppeal(Appeal appeal) {
         this.appeal = appeal;
     }
-    public void setValue(int value) {
-        this.value = value;
+
+    public void setBelief(Belief belief){
+        this.appeal.setBelief(belief);
     }
 
 }
