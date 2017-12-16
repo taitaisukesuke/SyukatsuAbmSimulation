@@ -142,7 +142,7 @@ public class Agent {
                     if (champion.getTalent(index).getValue() == 1 && champion.getBelief(index).getValue() == 1) {
                         this.setBelief(index,1);
                         count++;
-                    }else if(champion.getTalent(index).getValue() == -1 && champion.getBelief(index).getValue() == 1) {
+                    }else if(champion.getTalent(index).getValue() == 0 && champion.getBelief(index).getValue() == 1) {
                         this.setBelief(index,0);
                         count++;
                     }

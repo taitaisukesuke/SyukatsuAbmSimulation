@@ -14,9 +14,9 @@ import java.util.stream.Collectors;
 public class Main{
     public static final int AGENT_GROUP_NUM = 12;
     public static final int AGENT_NUM_IN_AGENT_GROUP=10;
-    public static final float BETA = 0.8f;
+    public static final float BETA = 0.3f;
     public static final int UPDATE_NUM =100;
-    public static final int gyomuNum = 120;
+    public static final int gyomuNum = 1000;
 
     private AgentGroup[] agentGroups;
     private final Company company;
@@ -54,6 +54,7 @@ public class Main{
             agentGroups[i]= new AgentGroup(agentNum,beta,i,gyomuNum);
         }
 
+        company = new Company(gyomuNum);
 
         List<String[]> first = new ArrayList<>();
         first.add( Arrays.stream(agentGroups)
@@ -64,13 +65,17 @@ public class Main{
                 .flatMap(agentGroup -> agentGroup.agents.stream().map(agent -> String.valueOf(agent.getConfidences().stream().mapToInt(Confidence::getValue).sum())))
                 .toArray(String[]::new));
 
+        first.add(Arrays.stream(agentGroups)
+                .flatMap(agentGroup -> agentGroup.agents.stream().map(agent -> String.valueOf(company.evaluateTalent(agent)-agent.getConfidences().stream().mapToInt(Confidence::getValue).sum())))
+                .toArray(String[]::new));
+
+
         try {
             Csv.save(first, new FileOutputStream(outputpath+".csv",true), new CsvConfig(), new StringArrayListHandler());
-
         } catch (IOException e) {
             e.printStackTrace();
         }
-        company = new Company(gyomuNum);
+
     }
 
     public void createNetwork(){
