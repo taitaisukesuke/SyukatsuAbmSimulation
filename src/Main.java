@@ -15,7 +15,7 @@ public class Main{
     public static final int AGENT_GROUP_NUM = 12;
     public static final int AGENT_NUM_IN_AGENT_GROUP=10;
     public static final float BETA = 0.8f;
-    public static final int UPDATE_NUM =1000;
+    public static final int UPDATE_NUM =100;
     public static final int gyomuNum = 120;
 
     private AgentGroup[] agentGroups;
@@ -24,7 +24,7 @@ public class Main{
         return agentGroups;
     }
 
-    private final String outputpath;
+    private  String outputpath="output/";
 
     public static void main(String[] args) {
         Main main = new Main(AGENT_GROUP_NUM,AGENT_NUM_IN_AGENT_GROUP,BETA);
@@ -46,8 +46,8 @@ public class Main{
 
     Main(int agentGroupNum,int agentNum,float beta){
         Date d = new Date();
-        SimpleDateFormat d1 = new SimpleDateFormat("output/MM_dd_HH_mm_ss.csv");
-        outputpath = d1.format(d);
+        SimpleDateFormat d1 = new SimpleDateFormat("MM_dd_HH_mm_ss");
+        outputpath += d1.format(d);
 
         agentGroups=new AgentGroup[agentGroupNum];
         for(int i =0;i<agentGroups.length;i++){
@@ -65,7 +65,7 @@ public class Main{
                 .toArray(String[]::new));
 
         try {
-            Csv.save(first, new FileOutputStream(outputpath,true), new CsvConfig(), new StringArrayListHandler());
+            Csv.save(first, new FileOutputStream(outputpath+".csv",true), new CsvConfig(), new StringArrayListHandler());
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -112,7 +112,7 @@ public class Main{
                 .toArray(String[]::new));
 
         try {
-            Csv.save(result, new FileOutputStream(outputpath,true), new CsvConfig(), new StringArrayListHandler());
+            Csv.save(result, new FileOutputStream(outputpath+".csv",true), new CsvConfig(), new StringArrayListHandler());
 
         } catch (IOException e) {
             e.printStackTrace();
