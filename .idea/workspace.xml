@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a94bd355-3acb-430a-aa10-ebda2bcb886a" name="Default" comment="">
+<<<<<<< HEAD
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/Agent.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/AgentGroup.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/Appeal.class" afterPath="" />
@@ -241,6 +242,12 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/StaticHuffman.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/TwoLevelHashSearch.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/Type.class" afterPath="" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/Agent.java" afterPath="$PROJECT_DIR$/src/Agent.java" />
+      <change beforePath="$PROJECT_DIR$/src/Company.java" afterPath="$PROJECT_DIR$/src/Company.java" />
+      <change beforePath="$PROJECT_DIR$/src/Indicator.java" afterPath="$PROJECT_DIR$/src/Indicator.java" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+>>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -295,8 +302,13 @@
       <file leaf-file-name="Agent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Agent.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1710">
               <caret line="135" column="26" lean-forward="false" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="26" />
+=======
+            <state relative-caret-position="0">
+              <caret line="144" column="102" lean-forward="true" selection-start-line="144" selection-start-column="102" selection-end-line="144" selection-end-column="102" />
+>>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
               <folding>
                 <element signature="e#1143#1144#0" expanded="true" />
                 <element signature="e#1211#1212#0" expanded="true" />
@@ -304,8 +316,8 @@
                 <element signature="e#1324#1325#0" expanded="true" />
                 <element signature="e#1737#1738#0" expanded="true" />
                 <element signature="e#1772#1773#0" expanded="true" />
-                <element signature="e#5070#5071#0" expanded="true" />
-                <element signature="e#5114#5115#0" expanded="true" />
+                <element signature="e#5069#5070#0" expanded="true" />
+                <element signature="e#5113#5114#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -314,8 +326,13 @@
       <file leaf-file-name="Confidence.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Confidence.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="180">
               <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+=======
+            <state relative-caret-position="480">
+              <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+>>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
               <folding>
                 <element signature="e#380#381#0" expanded="true" />
                 <element signature="e#408#409#0" expanded="true" />
@@ -327,11 +344,18 @@
       <file leaf-file-name="Performance.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Performance.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="60">
               <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+=======
+            <state relative-caret-position="576">
+              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+>>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
               <folding>
                 <element signature="e#234#235#0" expanded="true" />
                 <element signature="e#263#264#0" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+                <element signature="e#324#325#0" expanded="true" />
                 <element signature="e#352#353#0" expanded="true" />
                 <element signature="e#411#412#0" expanded="true" />
                 <element signature="e#534#535#0" expanded="true" />
@@ -357,8 +381,8 @@
       <file leaf-file-name="Company.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Company.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+            <state relative-caret-position="1529">
+              <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -367,8 +391,13 @@
       <file leaf-file-name="Talent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Talent.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="60">
               <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+=======
+            <state relative-caret-position="96">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+>>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
               <folding />
             </state>
           </provider>
@@ -377,8 +406,13 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="195">
               <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+=======
+            <state relative-caret-position="-1303">
+              <caret line="68" column="192" lean-forward="false" selection-start-line="68" selection-start-column="192" selection-end-line="68" selection-end-column="192" />
+>>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
               <folding />
             </state>
           </provider>
@@ -402,8 +436,13 @@
       <file leaf-file-name="Indicator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Indicator.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="195">
               <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+=======
+            <state relative-caret-position="905">
+              <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+>>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
               <folding />
             </state>
           </provider>
@@ -461,14 +500,14 @@
         <option value="$PROJECT_DIR$/src/lib/orangesignal-csv-master/src/main/java/com/orangesignal/csv/Csv.java" />
         <option value="$PROJECT_DIR$/src/lib/orangesignal-csv-master/src/main/java/com/orangesignal/csv/CsvResultSet.java" />
         <option value="$PROJECT_DIR$/src/AgentGroup.java" />
-        <option value="$PROJECT_DIR$/src/Indicator.java" />
         <option value="$PROJECT_DIR$/src/Belief.java" />
         <option value="$PROJECT_DIR$/src/Performance.java" />
-        <option value="$PROJECT_DIR$/src/Company.java" />
         <option value="$PROJECT_DIR$/src/Confidence.java" />
-        <option value="$PROJECT_DIR$/src/Agent.java" />
         <option value="$PROJECT_DIR$/src/Talent.java" />
         <option value="$PROJECT_DIR$/src/Appeal.java" />
+        <option value="$PROJECT_DIR$/src/Agent.java" />
+        <option value="$PROJECT_DIR$/src/Indicator.java" />
+        <option value="$PROJECT_DIR$/src/Company.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -801,8 +840,12 @@
       <workItem from="1513257835351" duration="1334000" />
       <workItem from="1513259194814" duration="20091000" />
       <workItem from="1513319179150" duration="58000" />
+<<<<<<< HEAD
       <workItem from="1513416584664" duration="2794000" />
       <workItem from="1513419578359" duration="14000" />
+=======
+      <workItem from="1513416584664" duration="7225000" />
+>>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
     </task>
     <servers />
   </component>
@@ -839,10 +882,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="64752000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="793" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="69169000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="167" y="0" width="3673" height="2055" extended-state="0" />
+    <editor active="true" />
+>>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -851,7 +902,11 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26666668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26666668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1073,36 +1128,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Indicator.java">
+    <entry file="file://$PROJECT_DIR$/test/AgentTest.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="195">
           <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
           <folding />
+=======
+        <state relative-caret-position="628">
+          <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+>>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Performance.java">
+    <entry file="file://$PROJECT_DIR$/src/Appeal.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="60">
           <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+=======
+        <state relative-caret-position="720">
+          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+>>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
           <folding>
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
             <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Confidence.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="180">
           <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+=======
+        <state relative-caret-position="480">
+          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+>>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
           <folding>
             <element signature="e#380#381#0" expanded="true" />
             <element signature="e#408#409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Performance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1120,6 +1206,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Talent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1140,6 +1227,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1710">
           <caret line="135" column="26" lean-forward="false" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="26" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/Agent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="144" column="102" lean-forward="true" selection-start-line="144" selection-start-column="102" selection-end-line="144" selection-end-column="102" />
+>>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
           <folding>
             <element signature="e#1143#1144#0" expanded="true" />
             <element signature="e#1211#1212#0" expanded="true" />
@@ -1147,34 +1240,59 @@
             <element signature="e#1324#1325#0" expanded="true" />
             <element signature="e#1737#1738#0" expanded="true" />
             <element signature="e#1772#1773#0" expanded="true" />
-            <element signature="e#5070#5071#0" expanded="true" />
-            <element signature="e#5114#5115#0" expanded="true" />
+            <element signature="e#5069#5070#0" expanded="true" />
+            <element signature="e#5113#5114#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/AgentTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Talent.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="628">
           <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+=======
+        <state relative-caret-position="96">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+>>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Appeal.java">
+    <entry file="file://$PROJECT_DIR$/src/Indicator.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="225">
           <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding>
             <element signature="e#498#499#0" expanded="true" />
             <element signature="e#534#535#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="905">
+          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1529">
+          <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+          <folding />
+>>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="195">
           <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+=======
+        <state relative-caret-position="-1303">
+          <caret line="68" column="192" lean-forward="false" selection-start-line="68" selection-start-column="192" selection-end-line="68" selection-end-column="192" />
+>>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
           <folding />
         </state>
       </provider>

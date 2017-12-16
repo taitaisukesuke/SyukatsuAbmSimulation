@@ -15,8 +15,14 @@ class Indicator{
     public int evaluate(Performance performance)
     {
         int result;
-        result=performance.getValue() *  weight;
+        result = performance.getValue() *  weight;
         return result;
+    }
+
+    public int evaluateTalent(Performance performance){
+       int talent= performance.getTalent().getValue();
+
+       return talent *weight;
     }
 
 }
