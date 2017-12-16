@@ -14,8 +14,10 @@ public class Agent {
         this.agentId = agentId;
         this.myGroup = myGroup;
 
+        int random = new Random().nextInt(100);
+
         for(int index = 0;index < capacity;index++){
-            this.performances.add(new Performance(new Appeal(),new Talent()));
+            this.performances.add(new Performance(new Appeal(random),new Talent()));
         }
     }
 

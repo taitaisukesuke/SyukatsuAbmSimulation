@@ -4,13 +4,17 @@ public class Appeal {
 
 
 
-    public Appeal(){
-        this.confidence = new Confidence();
+    public Appeal(int percentge){
+        this.confidence = new Confidence(percentge);
         this.belief = new Belief();
     }
 
     public int getValue() {
-       return this.belief.getValue() + this.confidence.getValue();
+        if(this.belief.getValue()==1 && this.confidence.getValue()==1){
+            return 1;
+        }else{
+            return 0;
+        }
     }
 
 
