@@ -16,7 +16,7 @@ public class Main{
     public static final int AGENT_NUM_IN_AGENT_GROUP=10;
     public static final float BETA = 0.3f;
     public static final int UPDATE_NUM =100;
-    public static final int gyomuNum = 1000;
+    public static final int gyomuNum = 300;
 
     private AgentGroup[] agentGroups;
     private final Company company;
@@ -57,6 +57,7 @@ public class Main{
         company = new Company(gyomuNum);
 
         List<String[]> first = new ArrayList<>();
+
         first.add( Arrays.stream(agentGroups)
                 .flatMap(agentGroup -> agentGroup.agents.stream().map(agent -> agent.getMyGroup().getId()+"--"+agent.getAgentId()))
                 .toArray(String[]::new));
@@ -66,7 +67,7 @@ public class Main{
                 .toArray(String[]::new));
 
         first.add(Arrays.stream(agentGroups)
-                .flatMap(agentGroup -> agentGroup.agents.stream().map(agent -> String.valueOf(company.evaluateTalent(agent)-agent.getConfidences().stream().mapToInt(Confidence::getValue).sum())))
+                .flatMap(agentGroup -> agentGroup.agents.stream().map(agent -> String.valueOf(agent.getTalents().stream().mapToInt(Talent::getValue).sum())))
                 .toArray(String[]::new));
 
 

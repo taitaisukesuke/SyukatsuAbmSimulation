@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Talent {
     int value;
-    private static final int[] nums={1,0};
+    private static final int[] nums={1,-1};
 
     public Talent(){
         Random rnd= new Random();
