@@ -1,258 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a94bd355-3acb-430a-aa10-ebda2bcb886a" name="Default" comment="">
-<<<<<<< HEAD
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/Agent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/AgentGroup.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/Appeal.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/Belief.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/Company.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/Confidence.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/Indicator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/Performance.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/Talent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/Csv.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/CsvConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/CsvHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/CsvListHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/CsvReader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/CsvResultSet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/CsvResultSetMetaData.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/CsvToken.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/CsvTokenException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/CsvValueException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/CsvWriter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/CsvWriter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/LhaEntryFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/QuotePolicy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/SerializationUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/SimpleCsvToken.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/ZipEntryFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/annotation/CsvColumn.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/annotation/CsvColumnAccessType$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/annotation/CsvColumnAccessType$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/annotation/CsvColumnAccessType$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/annotation/CsvColumnAccessType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/annotation/CsvColumnException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/annotation/CsvColumns.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/annotation/CsvEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/bean/AbstractCsvBeanTemplate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/bean/CsvBeanOperation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/bean/CsvBeanTemplate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/bean/CsvColumnNameMappingBeanOperation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/bean/CsvColumnNameMappingBeanTemplate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/bean/CsvColumnPositionMappingBeanOperation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/bean/CsvColumnPositionMappingBeanTemplate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/bean/CsvEntityOperation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/bean/CsvEntityTemplate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/bean/CsvValueConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/bean/FieldUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/bean/FormatUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/bean/SimpleCsvValueConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/entryfilters/AbstractEntryFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/entryfilters/DirectoryEntryFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/entryfilters/EntryNameFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/entryfilters/PrefixEntryNameFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/entryfilters/RegexEntryNameFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/entryfilters/SuffixEntryNameFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanAndExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanBetweenExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanCriteriaExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanCriteriasExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanEmptyExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanEqualExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanExpressionUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanExpressions.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanGreaterThanExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanGreaterThanOrEqualExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanInExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanLessThanExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanLessThanOrEqualExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanLogicalExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanNotEmptyExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanNotEqualExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanNotExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanNotInExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanNotNullExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanNullExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanOrExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/BeanRegexExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnNameBetweenExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnNameCriteriaExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnNameCriteriasExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnNameEmptyExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnNameEqualExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnNameExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnNameGreaterThanExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnNameGreaterThanOrEqualExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnNameInExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnNameLessThanExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnNameLessThanOrEqualExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnNameNotEmptyExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnNameNotEqualExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnNameNotInExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnNameNotNullExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnNameNullExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnNameRegexExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnPositionBetweenExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnPositionCriteriaExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnPositionCriteriasExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnPositionEmptyExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnPositionEqualExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnPositionExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnPositionGreaterThanExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnPositionGreaterThanOrEqualExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnPositionInExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnPositionLessThanExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnPositionLessThanOrEqualExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnPositionNotEmptyExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnPositionNotEqualExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnPositionNotInExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnPositionNotNullExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnPositionNullExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/ColumnPositionRegexExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/CsvExpressionUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/CsvExpressions.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/CsvNamedValueAndExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/CsvNamedValueFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/CsvNamedValueLogicalExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/CsvNamedValueNotExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/CsvNamedValueOrExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/CsvValueAndExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/CsvValueFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/CsvValueLogicalExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/CsvValueNotExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/CsvValueOrExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/SimpleBeanFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/SimpleCsvNamedValueFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/filters/SimpleCsvValueFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/handlers/AbstractBeanListHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/handlers/AbstractCsvListHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/handlers/BeanListHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/handlers/BeanOrder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/handlers/BeanOrderComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/handlers/ColumnNameMapListHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/handlers/ColumnNameMappingBeanListHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/handlers/ColumnPositionMapListHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/handlers/ColumnPositionMappingBeanListHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/handlers/CsvEntityListHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/handlers/ResultSetHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/handlers/StringArrayListHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/io/CsvBeanReader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/io/CsvBeanWriter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/io/CsvColumnNameMapReader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/io/CsvColumnNameMapWriter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/io/CsvColumnNameMappingBeanReader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/io/CsvColumnNameMappingBeanWriter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/io/CsvColumnPositionMapReader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/io/CsvColumnPositionMapWriter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/io/CsvColumnPositionMappingBeanReader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/io/CsvColumnPositionMappingBeanWriter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/io/CsvEntityReader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/io/CsvEntityWriter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/manager/AbstractCsvLoader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/manager/AbstractCsvSaver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/manager/CsvBeanLoader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/manager/CsvBeanManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/manager/CsvBeanSaver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/manager/CsvColumnNameMappingBeanLoader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/manager/CsvColumnNameMappingBeanManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/manager/CsvColumnNameMappingBeanSaver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/manager/CsvColumnPositionMappingBeanLoader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/manager/CsvColumnPositionMappingBeanManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/manager/CsvColumnPositionMappingBeanSaver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/manager/CsvEntityLoader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/manager/CsvEntityManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/manager/CsvEntitySaver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/manager/CsvLoader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/manager/CsvManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/manager/CsvManagerFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/csv/manager/CsvSaver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/BadHuffmanTableException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/BinaryTreeSearch.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/BitDataBrokenException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/BitInputStream$LocalEOFException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/BitInputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/BitOutputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/Bits.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/CRC16.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/CachedInputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/CompressMethod.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/Disconnectable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/DisconnectableInputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/DisconnectableOutputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/DynamicHuffman.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/Factory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/GrowthByteBuffer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/HashAndBinaryTreeSearch.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/HashAndChainedListSearch.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/HashDefault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/HashMethod.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/HashShort.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaChecksum.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaFile$CachedRandomAccessFileInputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaFile$HeaderEnumeration.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaFile$RandomAccessFileInputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaHeader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaImmediateOutputStream$RandomAccessFileOutputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaImmediateOutputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaInputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaOutputStream$Temporary.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaOutputStream$TemporaryBuffer$TemporaryBufferInputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaOutputStream$TemporaryBuffer$TemporaryBufferOutputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaOutputStream$TemporaryBuffer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaOutputStream$TemporaryFile$TemporaryFileInputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaOutputStream$TemporaryFile$TemporaryFileOutputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaOutputStream$TemporaryFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaOutputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaProperty.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaRetainedOutputStream$Cache.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaRetainedOutputStream$RandomAccessFileInputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaRetainedOutputStream$RandomAccessFileOutputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LhaRetainedOutputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LimitedInputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LittleEndian.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LzssInputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LzssOutputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/LzssSearchMethod.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/MsdosDate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/NotEnoughBitsException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/PatriciaTrieSearch.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/PostLh1Encoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/PostLh2Encoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/PostLh3Encoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/PostLh5Encoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/PostLz5Encoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/PostLzsEncoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/PostLzssEncoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/PreLh1Decoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/PreLh2Decoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/PreLh3Decoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/PreLh5Decoder$LocalEOFException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/PreLh5Decoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/PreLz5Decoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/PreLzsDecoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/PreLzssDecoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/SimpleSearch.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/StaticHuffman.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/TwoLevelHashSearch.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/1223new/com/orangesignal/jlha/Type.class" afterPath="" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/Agent.java" afterPath="$PROJECT_DIR$/src/Agent.java" />
-      <change beforePath="$PROJECT_DIR$/src/Company.java" afterPath="$PROJECT_DIR$/src/Company.java" />
-      <change beforePath="$PROJECT_DIR$/src/Indicator.java" afterPath="$PROJECT_DIR$/src/Indicator.java" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
->>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
+    <list default="true" id="1609e98c-4475-4da6-98ac-af91ad4da758" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/.gradle/" />
-    <ignored path="$PROJECT_DIR$/build/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,36 +15,6 @@
       <FILTER>visualize.*</FILTER>
     </SUITE>
   </component>
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
-      <ProjectState />
-    </projectState>
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SyukatsuAbmSimulation" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SyukatsuAbmSimulation" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="SyukatsuAbmSimulation" />
   </component>
@@ -302,23 +23,21 @@
       <file leaf-file-name="Agent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Agent.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="1710">
-              <caret line="135" column="26" lean-forward="false" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="26" />
-=======
-            <state relative-caret-position="0">
-              <caret line="144" column="102" lean-forward="true" selection-start-line="144" selection-start-column="102" selection-end-line="144" selection-end-column="102" />
->>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
+            <state relative-caret-position="228">
+              <caret line="147" column="32" lean-forward="false" selection-start-line="147" selection-start-column="32" selection-end-line="147" selection-end-column="32" />
               <folding>
-                <element signature="e#1143#1144#0" expanded="true" />
-                <element signature="e#1211#1212#0" expanded="true" />
-                <element signature="e#1258#1259#0" expanded="true" />
-                <element signature="e#1324#1325#0" expanded="true" />
-                <element signature="e#1737#1738#0" expanded="true" />
-                <element signature="e#1772#1773#0" expanded="true" />
-                <element signature="e#5069#5070#0" expanded="true" />
-                <element signature="e#5113#5114#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Agent.class" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/out/production/1223new/Agent.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-383">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -326,93 +45,8 @@
       <file leaf-file-name="Confidence.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Confidence.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="180">
-              <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-=======
-            <state relative-caret-position="480">
-              <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
->>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
-              <folding>
-                <element signature="e#380#381#0" expanded="true" />
-                <element signature="e#408#409#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Performance.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Performance.java">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="60">
-              <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-=======
-            <state relative-caret-position="576">
-              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
->>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
-              <folding>
-                <element signature="e#234#235#0" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#295#296#0" expanded="true" />
-                <element signature="e#324#325#0" expanded="true" />
-                <element signature="e#352#353#0" expanded="true" />
-                <element signature="e#411#412#0" expanded="true" />
-                <element signature="e#534#535#0" expanded="true" />
-                <element signature="e#579#580#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Appeal.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Appeal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-              <folding>
-                <element signature="e#498#499#0" expanded="true" />
-                <element signature="e#534#535#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Company.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Company.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1529">
-              <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Talent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Talent.java">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="60">
-              <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-=======
-            <state relative-caret-position="96">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
->>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="195">
-              <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-=======
-            <state relative-caret-position="-1303">
-              <caret line="68" column="192" lean-forward="false" selection-start-line="68" selection-start-column="192" selection-end-line="68" selection-end-column="192" />
->>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
+            <state relative-caret-position="150">
+              <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -423,11 +57,61 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AgentGroup.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AgentGroup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Performance.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Performance.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
               <folding>
-                <element signature="e#257#258#0" expanded="true" />
-                <element signature="e#291#292#0" expanded="true" />
-                <element signature="e#320#321#0" expanded="true" />
-                <element signature="e#348#349#0" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+                <element signature="e#324#325#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Appeal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Appeal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Talent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Talent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -436,13 +120,8 @@
       <file leaf-file-name="Indicator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Indicator.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="195">
-              <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-=======
-            <state relative-caret-position="905">
+            <state relative-caret-position="345">
               <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
->>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
               <folding />
             </state>
           </provider>
@@ -450,67 +129,8 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaFXApplication" />
-        <option value="Class" />
-        <option value="FxmlFile" />
-        <option value="Gradle Kotlin DSL Build Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="modificationStamps">
-      <map>
-        <entry key="$PROJECT_DIR$/build.gradle" value="2945969164" />
-      </map>
-    </option>
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/test/AgentTest.java" />
-        <option value="$PROJECT_DIR$/test/AgentGroupTest.java" />
-        <option value="$PROJECT_DIR$/src/visualize/Test.java" />
-        <option value="$PROJECT_DIR$/src/visualize/Cell.java" />
-        <option value="$PROJECT_DIR$/src/visualize/CellLayer.java" />
-        <option value="$PROJECT_DIR$/src/visualize/CellType.java" />
-        <option value="$PROJECT_DIR$/src/visualize/Edge.java" />
-        <option value="$PROJECT_DIR$/src/visualize/Layout.java" />
-        <option value="$PROJECT_DIR$/src/visualize/Model.java" />
-        <option value="$PROJECT_DIR$/src/visualize/MouseGestures.java" />
-        <option value="$PROJECT_DIR$/src/visualize/RandomLayout.java" />
-        <option value="$PROJECT_DIR$/src/visualize/TriangleCell.java" />
-        <option value="$PROJECT_DIR$/src/visualize/ZoomableScrollPane.java" />
-        <option value="$PROJECT_DIR$/src/visualize/Main.java" />
-        <option value="$PROJECT_DIR$/src/visualize/MainApp.java" />
-        <option value="$PROJECT_DIR$/src/visualize/RectangleCell.java" />
-        <option value="$PROJECT_DIR$/src/visualize/Graph.java" />
-        <option value="$PROJECT_DIR$/src/visualize/Test.fxml" />
-        <option value="$PROJECT_DIR$/src/build.gradle" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/lib/orangesignal-csv-master/src/main/java/com/orangesignal/csv/Csv.java" />
-        <option value="$PROJECT_DIR$/src/lib/orangesignal-csv-master/src/main/java/com/orangesignal/csv/CsvResultSet.java" />
-        <option value="$PROJECT_DIR$/src/AgentGroup.java" />
-        <option value="$PROJECT_DIR$/src/Belief.java" />
-        <option value="$PROJECT_DIR$/src/Performance.java" />
-        <option value="$PROJECT_DIR$/src/Confidence.java" />
-        <option value="$PROJECT_DIR$/src/Talent.java" />
-        <option value="$PROJECT_DIR$/src/Appeal.java" />
-        <option value="$PROJECT_DIR$/src/Agent.java" />
-        <option value="$PROJECT_DIR$/src/Indicator.java" />
-        <option value="$PROJECT_DIR$/src/Company.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-      </list>
-    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -518,10 +138,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="57" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="793" />
+    <option name="width" value="1328" />
+    <option name="height" value="764" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -539,18 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="SyukatsuAbmSimulation" type="58d84e3e:PackageViewProjectNode" />
-              <item name="1223new" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="AndroidView" />
       <pane id="Scratches">
         <subPane>
           <expand>
@@ -571,38 +181,49 @@
         <subPane>
           <expand>
             <path>
-              <item name="SyukatsuAbmSimularion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SyukatsuAbmSimularion" type="462c0819:PsiDirectoryNode" />
+              <item name="SyukathuABM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SyukathuABM" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SyukatsuAbmSimularion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SyukatsuAbmSimularion" type="462c0819:PsiDirectoryNode" />
+              <item name="SyukathuABM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SyukathuABM" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SyukathuABM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SyukathuABM" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SyukathuABM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SyukathuABM" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="1223new" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SyukathuABM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SyukathuABM" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SyukatsuAbmSimulation" type="58d84e3e:PackageViewProjectNode" />
+              <item name="1223new" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$" />
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\development\SyukatsuAbmSimulation" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -616,103 +237,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="AgentGroupTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="1223new" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AgentGroupTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="AgentTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="1223new" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AgentTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="All in 1223new" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="1223new" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="visualize.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/src" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="1223new" />
-      <envs />
-    </configuration>
-    <configuration name="Unnamed" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -794,124 +319,33 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="Gradle.Unnamed" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.AgentTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AgentGroupTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.All in 1223new" />
-    </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in 1223new" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1513259517074" />
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="a94bd355-3acb-430a-aa10-ebda2bcb886a" name="Default" comment="" />
-      <created>1513068193706</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1512981826702</updated>
-      <workItem from="1512981831050" duration="686000" />
-      <workItem from="1512982688559" duration="2354000" />
-      <workItem from="1512986829145" duration="826000" />
-      <workItem from="1512987894280" duration="515000" />
-      <workItem from="1513067565443" duration="5000" />
-      <workItem from="1513097263683" duration="20848000" />
-      <workItem from="1513151876664" duration="138000" />
-      <workItem from="1513152040206" duration="1839000" />
-      <workItem from="1513158075833" duration="2575000" />
-      <workItem from="1513160676728" duration="6245000" />
-      <workItem from="1513249201022" duration="4426000" />
-      <workItem from="1513257835351" duration="1334000" />
-      <workItem from="1513259194814" duration="20091000" />
-      <workItem from="1513319179150" duration="58000" />
-<<<<<<< HEAD
-      <workItem from="1513416584664" duration="2794000" />
-      <workItem from="1513419578359" duration="14000" />
-=======
-      <workItem from="1513416584664" duration="7225000" />
->>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
-    </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="AgentGroupTest - 2017.12.13 at 04h 13m 43s.xml">
-      <configuration name="AgentGroupTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AgentGroupTest - 2017.12.13 at 04h 14m 14s.xml">
-      <configuration name="AgentGroupTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AgentGroupTest - 2017.12.13 at 04h 32m 56s.xml">
-      <configuration name="AgentGroupTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AgentGroupTest - 2017.12.13 at 14h 07m 21s.xml">
-      <configuration name="AgentGroupTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AgentGroupTest - 2017.12.13 at 14h 59m 40s.xml">
-      <configuration name="AgentGroupTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AgentGroupTest - 2017.12.13 at 15h 09m 51s.xml">
-      <configuration name="AgentGroupTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AgentTest - 2017.12.13 at 15h 09m 48s.xml">
-      <configuration name="AgentTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AgentTest - 2017.12.13 at 15h 16m 42s.xml">
-      <configuration name="AgentTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_1223new - 2017.12.16 at 19h 00m 52s.xml">
-      <configuration name="All in 1223new" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_1223new - 2017.12.16 at 19h 09m 53s.xml">
-      <configuration name="All in 1223new" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="64752000" />
+    <option name="totallyTimeSpent" value="88000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="793" extended-state="6" />
-=======
-    <option name="totallyTimeSpent" value="69169000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="167" y="0" width="3673" height="2055" extended-state="0" />
-    <editor active="true" />
->>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
+    <frame x="57" y="23" width="1328" height="764" extended-state="1" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26589596" sideWeight="0.50301206" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26666668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-=======
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26666668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
->>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37572256" sideWeight="0.49698794" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18958333" sideWeight="0.4970458" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18900603" sideWeight="0.4970458" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -925,7 +359,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298274" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -961,12 +394,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="21" />
@@ -981,34 +408,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Agent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AgentGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Agent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1073,13 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/orangesignal-csv-master/src/main/java/com/orangesignal/csv/Csv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/util/function/Function.java" />
     <entry file="file://$PROJECT_DIR$/test/AgentGroupTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1092,10 +484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="643">
           <caret line="153" column="11" lean-forward="false" selection-start-line="153" selection-start-column="11" selection-end-line="153" selection-end-column="11" />
-          <folding>
-            <element signature="e#3000#3001#0" expanded="false" />
-            <element signature="e#3073#3074#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1113,13 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AgentGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2592">
-          <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle" />
     <entry file="file://$PROJECT_DIR$/src/example.csv">
       <provider selected="true" editor-type-id="text-editor">
@@ -1130,66 +511,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/AgentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="195">
-          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-          <folding />
-=======
         <state relative-caret-position="628">
           <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
->>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Appeal.java">
+    <entry file="file://$PROJECT_DIR$/1223new.iml">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="60">
-          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-=======
-        <state relative-caret-position="720">
-          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
->>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
-          <folding>
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/orangesignal-csv-master/src/main/java/com/orangesignal/csv/Csv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7170">
+          <caret line="514" column="30" lean-forward="false" selection-start-line="514" selection-start-column="30" selection-end-line="514" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/function/IntFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="34" column="52" lean-forward="false" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Confidence.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="180">
-          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-=======
-        <state relative-caret-position="480">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
->>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
-          <folding>
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Performance.java">
+    <entry file="file://$PROJECT_DIR$/src/Indicator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding>
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1197,16 +573,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AgentGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
           <folding>
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/Performance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Talent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1215,186 +614,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Company.java">
+    <entry file="file://$PROJECT_DIR$/src/Appeal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        <state relative-caret-position="360">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Agent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="135" column="26" lean-forward="false" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="26" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/Agent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="144" column="102" lean-forward="true" selection-start-line="144" selection-start-column="102" selection-end-line="144" selection-end-column="102" />
->>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
+        <state relative-caret-position="228">
+          <caret line="147" column="32" lean-forward="false" selection-start-line="147" selection-start-column="32" selection-end-line="147" selection-end-column="32" />
           <folding>
-            <element signature="e#1143#1144#0" expanded="true" />
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1258#1259#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1737#1738#0" expanded="true" />
-            <element signature="e#1772#1773#0" expanded="true" />
-            <element signature="e#5069#5070#0" expanded="true" />
-            <element signature="e#5113#5114#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Talent.java">
+    <entry file="file://$PROJECT_DIR$/out/production/1223new/Agent.class">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="628">
-          <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
-=======
-        <state relative-caret-position="96">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
->>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Indicator.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="225">
-          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-          </folding>
-=======
-        <state relative-caret-position="905">
-          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state relative-caret-position="-383">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1529">
-          <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-          <folding />
->>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="195">
-          <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-=======
-        <state relative-caret-position="-1303">
-          <caret line="68" column="192" lean-forward="false" selection-start-line="68" selection-start-column="192" selection-end-line="68" selection-end-column="192" />
->>>>>>> 550c1c38f8362f50483417331ae3073a73e1096f
-          <folding />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Detection</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>9.0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>1223new</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>com.orangesignal:orangesignal-csv:2.2.0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
