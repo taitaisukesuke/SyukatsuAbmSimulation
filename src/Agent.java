@@ -1,5 +1,7 @@
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.Random;
+
 
 
 public class Agent {
@@ -102,9 +104,11 @@ public class Agent {
 
 
     public Agent findChampion(){
+//        Random rnd = new Random();
+//        int i = rnd.nextInt(connectedList.size());
+////        Agent champion = this.connectedList.get(i);
         Agent champion= null;
-
-        for(int i=0;i<connectedList.size();i++){
+        for (int i=0;i<connectedList.size();i++){
             if(this.getScore()<connectedList.get(i).getScore()){
                 if(champion==null){
                     champion=connectedList.get(i);
@@ -151,12 +155,6 @@ public class Agent {
 
             System.out.println(count+"個アップデート");
         }
-
-
-
-
-
-
 
     }
 
