@@ -1,3 +1,5 @@
+import javafx.scene.canvas.Canvas;
+
 import java.util.ArrayList;
 
 public class AgentGroup {
@@ -6,6 +8,7 @@ public class AgentGroup {
     private final float beta;
     private final int id;
 
+
     public AgentGroup(int agentsNum,float beta,int id, int agentCapacity){
         this.agentsNum=agentsNum;
         this.beta=beta;
@@ -13,7 +16,19 @@ public class AgentGroup {
         for(int i=0;i<agentsNum;i++){
             agents.add(new Agent(i, agentCapacity,this));
         }
+        connectAllAgents();
+    }
 
+
+    //for visualize
+    public AgentGroup(int agentsNum, float beta, int id,int agentCapacity, double centerX, double centerY,Canvas canvas) {
+        this.agentsNum = agentsNum;
+        this.beta = beta;
+        this.id = id;
+
+        for(int i=0;i<agentsNum;i++){
+            agents.add(new Agent(i, agentCapacity,this,centerX+60*Math.cos((double) (i+1)/ agentsNum*2*Math.PI),centerY+60*Math.sin((double)(i+1)/agentsNum*2*Math.PI),canvas));
+        }
         connectAllAgents();
     }
 

@@ -2,6 +2,9 @@ import com.orangesignal.csv.Csv;
 import com.orangesignal.csv.CsvConfig;
 import com.orangesignal.csv.CsvWriter;
 import com.orangesignal.csv.handlers.StringArrayListHandler;
+import javafx.application.Application;
+import javafx.scene.canvas.Canvas;
+import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -12,11 +15,11 @@ import java.util.function.IntFunction;
 import java.util.stream.Collectors;
 
 public class Main{
-    public static final int AGENT_GROUP_NUM = 12;
+    public static final int AGENT_GROUP_NUM = 5;
     public static final int AGENT_NUM_IN_AGENT_GROUP=10;
-    public static final float BETA = 0.3f;
+    public static final float BETA = 1f;
     public static final int UPDATE_NUM =100;
-    public static final int gyomuNum = 1000;
+    public static final int gyomuNum = 120;
 
     private AgentGroup[] agentGroups;
     private final Company company;
@@ -26,33 +29,38 @@ public class Main{
 
     private  String outputpath="output/";
 
-    public static void main(String[] args) {
-        Main main = new Main(AGENT_GROUP_NUM,AGENT_NUM_IN_AGENT_GROUP,BETA);
-
-        System.out.println("start to create network");
-        main.createNetwork();
+    private Canvas canvas;
 
 
-
-
-        for(int i = 0;i<UPDATE_NUM;i++){
-            System.out.println("start learning");
-            main.Learning();
-
-            System.out.println("start evaluating");
-            main.eval();
-        }
-    }
-
-    Main(int agentGroupNum,int agentNum,float beta){
+    Main(int agentGroupNum,int agentNum,float beta,Canvas canvas){
         Date d = new Date();
         SimpleDateFormat d1 = new SimpleDateFormat("MM_dd_HH_mm_ss");
         outputpath += d1.format(d);
 
         agentGroups=new AgentGroup[agentGroupNum];
-        for(int i =0;i<agentGroups.length;i++){
-            agentGroups[i]= new AgentGroup(agentNum,beta,i,gyomuNum);
+
+        if (canvas==null){
+            for(int i =0;i<agentGroups.length;i++){
+                agentGroups[i]= new AgentGroup(agentNum,beta,i,gyomuNum);
+            }
+        }else{
+            this.canvas=canvas;
+            for(int i =0;i<agentGroups.length;i++){
+               //AgentGroupの中心を円状に計算して配置
+                double centerX = (canvas.getWidth()/2.0)+200*Math.cos((double) (i+1)/ AGENT_GROUP_NUM*2*Math.PI );
+                double centerY = (canvas.getHeight()/2.0)+200*Math.sin((double)(i+1)/AGENT_GROUP_NUM*2*Math.PI);
+
+                agentGroups[i]= new AgentGroup(
+                        agentNum,beta,
+                        i,
+                        gyomuNum,
+                        centerX,
+                        centerY,
+                        canvas
+                );
+            }
         }
+
 
         company = new Company(gyomuNum);
 
@@ -66,15 +74,16 @@ public class Main{
                 .toArray(String[]::new));
 
         first.add(Arrays.stream(agentGroups)
-                .flatMap(agentGroup -> agentGroup.agents.stream().map(agent -> String.valueOf(company.evaluateTalent(agent)-agent.getConfidences().stream().mapToInt(Confidence::getValue).sum())))
+                .flatMap(agentGroup -> agentGroup.agents.stream().map(agent -> String.valueOf(company.evaluateTalent(agent) - agent.getConfidences().stream().mapToInt(Confidence::getValue).sum())))
                 .toArray(String[]::new));
-
 
         try {
             Csv.save(first, new FileOutputStream(outputpath+".csv",true), new CsvConfig(), new StringArrayListHandler());
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
 
     }
 
@@ -97,7 +106,6 @@ public class Main{
 
                 if(randNum!=i && !randomAgent.isConnected(agent)){
                     agent.connect(randomAgent);
-
                     break;
                 }
             }
@@ -118,9 +126,25 @@ public class Main{
 
         try {
             Csv.save(result, new FileOutputStream(outputpath+".csv",true), new CsvConfig(), new StringArrayListHandler());
-
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+
+
+    public static void main(String[] args) {
+        Main main = new Main(AGENT_GROUP_NUM,AGENT_NUM_IN_AGENT_GROUP,BETA,null);
+
+        System.out.println("start to create network");
+        main.createNetwork();
+
+        for(int i = 0;i<UPDATE_NUM;i++){
+            System.out.println("start learning");
+            main.Learning();
+
+            System.out.println("start evaluating");
+            main.eval();
         }
     }
 

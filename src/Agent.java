@@ -1,3 +1,7 @@
+
+
+import javafx.scene.canvas.Canvas;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -5,14 +9,38 @@ import java.util.stream.Collectors;
 public class Agent {
     ArrayList<Agent> connectedList = new ArrayList<>();
     private final AgentGroup myGroup;
-    final int agentId;
+    private final int agentId;
     private final ArrayList<Performance> performances = new ArrayList<Performance>();
     int score = 0;
 
+    private final double x;
+    private final  double y;
+    private final Canvas canvas;
 
     public Agent(int agentId, int capacity, AgentGroup myGroup){
         this.agentId = agentId;
         this.myGroup = myGroup;
+
+
+        int random = new Random().nextInt(100);
+
+        for(int index = 0;index < capacity;index++){
+            this.performances.add(new Performance(new Appeal(random),new Talent()));
+        }
+
+        this.x=0;
+        this.y=0;
+        this.canvas=null;
+    }
+
+    public Agent( int agentId,int capacity,AgentGroup myGroup, double x, double y,Canvas canvas) {
+        this.myGroup = myGroup;
+        this.agentId = agentId;
+        this.canvas= canvas;
+        this.x = x;
+        this.y = y;
+
+        canvas.getGraphicsContext2D().fillOval(x,y,10,10);
 
         int random = new Random().nextInt(100);
 
@@ -82,15 +110,24 @@ public class Agent {
     }
 
 
+    /**
+     *   visualize用ゲッター
+     */
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
+    }
 
     public Agent[] connect(Agent opponent) {
         if(opponent !=null && !isConnected(opponent)&& !opponent.isConnected(this) ){
             connectedList.add(opponent);
             //1.opponentをconnectedListに加える
             opponent.connect(this);
-
+            canvas.getGraphicsContext2D().strokeLine(getX()+5,getY()+5,opponent.getX()+5,opponent.getY()+5);
             //2.opponent側のconnect関数も発動
-
             System.out.println(this.getMyGroup().getId()+","+this.getAgentId()+"connected" + opponent.getMyGroup().getId()+","+opponent.getAgentId());
             return new Agent[]{this,opponent};
             //3.opponentと自分をreturn
@@ -104,15 +141,14 @@ public class Agent {
     public Agent findChampion(){
         Agent champion= null;
 
-        for(int i=0;i<connectedList.size();i++){
-            if(this.getScore()<connectedList.get(i).getScore()){
-                if(champion==null){
-                    champion=connectedList.get(i);
-                }else if(champion.getScore() < connectedList.get(i).getScore()){
-                    champion=connectedList.get(i);
+        for (Agent aConnectedList : connectedList) {
+            if (this.getScore() < aConnectedList.getScore()) {
+                if (champion == null) {
+                    champion = aConnectedList;
+                } else if (champion.getScore() < aConnectedList.getScore()) {
+                    champion = aConnectedList;
                 }
             }
-
         }
         return champion;
     }
@@ -151,13 +187,6 @@ public class Agent {
 
             System.out.println(count+"個アップデート");
         }
-
-
-
-
-
-
-
     }
 
     public boolean isConnected(Agent agent){
