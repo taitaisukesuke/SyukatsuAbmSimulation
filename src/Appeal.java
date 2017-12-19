@@ -10,12 +10,12 @@ public class Appeal {
     }
 
     public int getValue() {
-        return this.belief.getValue()+this.confidence.getValue();
-//        if(this.belief.getValue()==1 && this.confidence.getValue()==1){
-//            return 1;
-//        }else{
-//            return 0;
-//        }
+//        return this.belief.getValue()+this.confidence.getValue();
+        if(this.belief.getValue()==1 && this.confidence.getValue()==1){
+            return 1;
+        }else{
+            return 0;
+        }
     }
 
 
