@@ -4,6 +4,8 @@ import javafx.scene.canvas.Canvas;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.Random;
+
 
 
 public class Agent {
@@ -25,7 +27,7 @@ public class Agent {
         int random = new Random().nextInt(100);
 
         for(int index = 0;index < capacity;index++){
-            this.performances.add(new Performance(new Appeal(random),new Talent()));
+            this.performances.add(new Performance(new Appeal(random),new Talent(random)));
         }
 
         this.x=0;
@@ -45,7 +47,7 @@ public class Agent {
         int random = new Random().nextInt(100);
 
         for(int index = 0;index < capacity;index++){
-            this.performances.add(new Performance(new Appeal(random),new Talent()));
+            this.performances.add(new Performance(new Appeal(random),new Talent(random)));
         }
     }
 
@@ -139,6 +141,9 @@ public class Agent {
 
 
     public Agent findChampion(){
+//        Random rnd = new Random();
+//        int i = rnd.nextInt(connectedList.size());
+////        Agent champion = this.connectedList.get(i);
         Agent champion= null;
 
         for (Agent aConnectedList : connectedList) {
@@ -147,6 +152,7 @@ public class Agent {
                     champion = aConnectedList;
                 } else if (champion.getScore() < aConnectedList.getScore()) {
                     champion = aConnectedList;
+
                 }
             }
         }
@@ -187,6 +193,7 @@ public class Agent {
 
             System.out.println(count+"個アップデート");
         }
+
     }
 
     public boolean isConnected(Agent agent){
