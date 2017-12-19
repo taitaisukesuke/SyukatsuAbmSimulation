@@ -6,12 +6,17 @@ public class Confidence {
 
     public Confidence(int percentage){
         Random rnd= new Random();
-        int i= rnd.nextInt(100);
-        if(percentage>i){
-            this.value=nums[0];
-        }else{
-            this.value=nums[1];
-        }
+        int i= rnd.nextInt(2);
+        this.value=nums[i];
+
+//        Random rnd= new Random();
+//        int i= rnd.nextInt(100);
+//
+//        if(percentage>i){
+//            this.value=nums[0];
+//        }else{
+//            this.value=nums[1];
+//        }
 
     }
 

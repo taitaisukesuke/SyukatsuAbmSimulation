@@ -19,7 +19,7 @@ public class Agent {
         int random = new Random().nextInt(100);
 
         for(int index = 0;index < capacity;index++){
-            this.performances.add(new Performance(new Appeal(random),new Talent()));
+            this.performances.add(new Performance(new Appeal(random),new Talent(random)));
         }
     }
 
@@ -101,27 +101,6 @@ public class Agent {
         }
     }
 
-
-
-    public Agent findChampion(){
-//        Random rnd = new Random();
-//        int i = rnd.nextInt(connectedList.size());
-////        Agent champion = this.connectedList.get(i);
-        Agent champion= null;
-        for (int i=0;i<connectedList.size();i++){
-            if(this.getScore()<connectedList.get(i).getScore()){
-                if(champion==null){
-                    champion=connectedList.get(i);
-                }else if(champion.getScore() < connectedList.get(i).getScore()){
-                    champion=connectedList.get(i);
-                }
-            }
-
-        }
-        return champion;
-    }
-
-
     public int sumConfidences(){
         int sumConfidences = 0;
         for(Confidence confidence : this.getConfidences()){
@@ -146,7 +125,7 @@ public class Agent {
                     if (champion.getTalent(index).getValue() == 1 && champion.getBelief(index).getValue() == 1) {
                         this.setBelief(index,1);
                         count++;
-                    }else if(champion.getTalent(index).getValue() == 0 && champion.getBelief(index).getValue() == 1) {
+                    }else if(champion.getTalent(index).getValue() == -1 && champion.getBelief(index).getValue() == 1) {
                         this.setBelief(index,0);
                         count++;
                     }
@@ -161,6 +140,93 @@ public class Agent {
     public boolean isConnected(Agent agent){
         return this.connectedList.contains(agent) && agent.getConnectedList().contains(this);
     }
+
+//    一番高いAgent対象
+    public Agent findChampion(){
+
+        Agent champion = null;
+
+        for (int i=0;i<connectedList.size();i++){
+            if(this.getScore()<connectedList.get(i).getScore()){
+                if(champion == null){
+                    champion=connectedList.get(i);
+                }else if(champion.getScore() < connectedList.get(i).getScore()){
+                    champion=connectedList.get(i);
+                }
+            }
+        }
+        return champion;
+    }
+
+//    能力が自分と近いと思われるもの（T＝C）
+//    public Agent findChampion() {
+//        Agent champion = this;
+//        int champNum = 0;
+//
+//        for (Agent agent : connectedList) {
+//            int sum = 0;
+//            if (this.getScore() < agent.getScore()) {
+//                for (int i = 0; i < agent.getTalents().size(); i++) {
+//                    if (agent.getTalent(i).getValue() == champion.getConfidence(i).getValue()) {
+//                        sum += 1;
+//                    }
+//                    if (sum >= champNum) {
+//                        champion = agent;
+//                        champNum = sum;
+//                    }
+//                }
+//            }
+//        }
+//        return champion;
+//    }
+
+//    T=Cの数が一番多いもの
+//    public Agent findChampion() {
+//        Agent champion = this;
+//        int champNum = 0;
+//
+//        for (Agent agent : connectedList) {
+//            int sum = 0;
+//            if (this.getScore() < agent.getScore()) {
+//                for (int i = 0; i < agent.getTalents().size(); i++) {
+//                    if (agent.getTalent(i).getValue() == agent.getConfidence(i).getValue()) {
+//                        sum += 1;
+//                    }
+//                    if (sum >= champNum) {
+//                        champion = agent;
+//                        champNum = sum;
+//                    }
+//                }
+//            }
+//        }
+//        return champion;
+//    }
+
+//    自分以上のスコアのagentの多決
+//        public Agent findChampion() {
+//        Agent champion = new Agent(0,this.getPerformances().size(),this.myGroup);
+//        ArrayList<Agent> highers = new ArrayList<>();
+//        int dSize = this.getPerformances().size();
+//
+//            for(Agent agent :connectedList){
+//            if(agent.getScore()>this.score){
+//                highers.add(agent);
+//            } }
+//            for (Agent higher: highers){
+//                for (int i = 0; i < dSize; i++){
+//                    champion.setBelief(i,champion.getBelief(i).getValue() + higher.getBelief(i).getValue());
+//                }
+//            }
+//            for (int i = 0; i <dSize; i++){
+//                if(champion.getBelief(i).getValue() > highers.size()/2){
+//                    champion.setBelief(i,1);
+//                }
+//                else{
+//                    champion.setBelief(i,0);
+//                }
+//            }
+//            return champion;
+//        }
 
     @Override
     public boolean equals(Object o) {

@@ -12,8 +12,8 @@ import java.util.function.IntFunction;
 import java.util.stream.Collectors;
 
 public class Main{
-    public static final int AGENT_GROUP_NUM = 6;
-    public static final int AGENT_NUM_IN_AGENT_GROUP=20;
+    public static final int AGENT_GROUP_NUM = 10;
+    public static final int AGENT_NUM_IN_AGENT_GROUP=12;
     public static final float BETA = 0.5f;
     public static final int UPDATE_NUM =100;
     public static final int gyomuNum = 300;
@@ -70,12 +70,12 @@ public class Main{
                 .flatMap(agentGroup -> agentGroup.agents.stream().map(agent -> String.valueOf(agent.getTalents().stream().mapToInt(Talent::getValue).sum())))
                 .toArray(String[]::new));
 
-//        first.add(Arrays.stream(agentGroups)
-//                .flatMap(agentGroup -> agentGroup.agents.stream().map(agent -> String.valueOf(
-//                        (gyomuNum+agent.getTalents().stream().mapToInt(Talent::getValue).sum())/2
-//                        -agent.getConfidences().stream().mapToInt(Confidence::getValue).sum()
-//                        )))
-//                .toArray(String[]::new));
+        first.add(Arrays.stream(agentGroups)
+                .flatMap(agentGroup -> agentGroup.agents.stream().map(agent -> String.valueOf(
+                        (gyomuNum+agent.getTalents().stream().mapToInt(Talent::getValue).sum())/2
+                        -agent.getConfidences().stream().mapToInt(Confidence::getValue).sum()
+                        )))
+                .toArray(String[]::new));
 
 
 
