@@ -8,7 +8,7 @@ public class Talent {
 //        Random rnd= new Random();
 //        int i= rnd.nextInt(2);
 //        this.value=nums[i];
-
+        
         Random rnd= new Random();
         int i= rnd.nextInt(100);
 

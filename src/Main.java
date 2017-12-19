@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 public class Main{
     public static final int AGENT_GROUP_NUM = 10;
     public static final int AGENT_NUM_IN_AGENT_GROUP=12;
-    public static final float BETA = 0.5f;
+    public static final float BETA = 0.3f;
     public static final int UPDATE_NUM =100;
     public static final int gyomuNum = 300;
 
