@@ -17,8 +17,8 @@ public class Main{
     public static final int AGENT_GROUP_NUM = 10;
     public static final int AGENT_NUM_IN_AGENT_GROUP=12;
     public static final float BETA = 0.3f;
-    public static final int UPDATE_NUM =100;
-    public static final int gyomuNum = 100;
+    public static final int UPDATE_NUM =1000;
+    public static final int gyomuNum = 300;
 
     private AgentGroup[] agentGroups;
     private final Company company;
@@ -34,8 +34,6 @@ public class Main{
         System.out.println("start to create network");
         main.createNetwork();
         main.judgeConfidenceOrtalent();
-
-
 
             for (int j = 0; j < UPDATE_NUM; j++) {
                 System.out.println("start learning");
@@ -80,8 +78,6 @@ public class Main{
                         )))
                 .toArray(String[]::new));
 
-
-
         try {
             Csv.save(first, new FileOutputStream(outputpath+".csv",true), new CsvConfig(), new StringArrayListHandler());
         } catch (IOException e) {
@@ -119,17 +115,23 @@ public class Main{
     private void judgeConfidenceOrtalent(){
         ArrayList<Agent> allAgents=new ArrayList<>();
 
+//        for(int i=0;i<AGENT_GROUP_NUM;i++){
+//            for(int j=0;j<AGENT_NUM_IN_AGENT_GROUP;j++){
+//                allAgents.add(agentGroups[i].getAgents().get(j));
+//            }
+//        }
+
         for(int i=0;i<AGENT_GROUP_NUM;i++){
             for(int j=0;j<AGENT_NUM_IN_AGENT_GROUP;j++){
-                allAgents.add(agentGroups[i].getAgents().get(j));
+                agentGroups[i].getAgents().get(j).setGifted(true);
             }
         }
 
-        Collections.sort(allAgents,new AgentComparator());
-
-        for (int i=0;i<allAgents.size()/2;i++){
-            allAgents.get(i).setGifted(false);
-        }
+//        Collections.sort(allAgents,new AgentComparator());
+//
+//        for (int i=0;i<allAgents.size()/2;i++){
+//            allAgents.get(i).setGifted(false);
+//        }
 
     }
 

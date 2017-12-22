@@ -1,3 +1,5 @@
+import kotlin.reflect.jvm.internal.impl.load.kotlin.JvmType;
+
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.Random;
@@ -129,31 +131,77 @@ public class Agent {
     }
 
     public void updateMyBelieves() {
-        Agent champion = findChampion();
-        if (champion != null) {
+        if(isGifted){
+            ArrayList<Integer> calculatedScores = new ArrayList<>();
+
+           for(int i =0 ; i<this.getBelieves().size();i++){
+               int calculatedScore =0;
+               for(Agent higherAgent: getHighreScoreAgents()){
+                   if(higherAgent.getBelief(i).getValue()==1 &&higherAgent.getTalent(i).getValue()==1 ){
+                       calculatedScore+=1;
+                   }else if(higherAgent.getBelief(i).getValue()==1 && higherAgent.getTalent(i).getValue()==-1){
+                       calculatedScore-=1;
+                   }
+               }
+
+               calculatedScores.add(calculatedScore);
+           }
+
+
+
             int sumConfidences = this.sumConfidences();
             double learningProb = (double) sumConfidences / this.getConfidences().size();
-            System.out.println(learningProb);
-            //ForTest
             int count = 0;
 
-            for (int index = 0; index < this.getConfidences().size(); index++) {
+            for(int i =0;i < calculatedScores.size();i++){
                 double p = Math.random();
 
                 if (p >= learningProb) {
-                    if (champion.getTalent(index).getValue() == 1 && champion.getBelief(index).getValue() == 1) {
-                        this.setBelief(index, 1);
+                    if(calculatedScores.get(i) > 0){
+                        this.setBelief(i,1);
                         count++;
-                    } else if (champion.getTalent(index).getValue() == -1 && champion.getBelief(index).getValue() == 1) {
-                        this.setBelief(index, 0);
+                    }else if (calculatedScores.get(i) < 0){
+                        this.setBelief(i,0);
                         count++;
                     }
                 }
             }
 
-            System.out.println(count + "個アップデート");
+            System.out.println(calculatedScores.size()+"中"+count + "個アップデート");
+
+        }else{
+            Agent champion = findChampion();
+            if (champion != null) {
+                int sumConfidences = this.sumConfidences();
+                double learningProb = (double) sumConfidences / this.getConfidences().size();
+                System.out.println(learningProb);
+                //ForTest
+                int count = 0;
+
+                for (int index = 0; index < this.getConfidences().size(); index++) {
+                    double p = Math.random();
+
+                    if (p >= learningProb) {
+                        if (champion.getTalent(index).getValue() == 1 && champion.getBelief(index).getValue() == 1) {
+                            this.setBelief(index, 1);
+                            count++;
+                        } else if (champion.getTalent(index).getValue() == -1 && champion.getBelief(index).getValue() == 1) {
+                            this.setBelief(index, 0);
+                            count++;
+                        }
+                    }
+                }
+
+                System.out.println(count + "個アップデート");
+            }
+
         }
 
+    }
+
+
+    private List<Agent> getHighreScoreAgents(){
+        return connectedList.stream().filter(agent -> this.getScore()<agent.getScore()).collect(Collectors.toList());
     }
 
     public boolean isConnected(Agent agent) {
@@ -224,51 +272,18 @@ public class Agent {
     //    自分以上のスコアのagentの多決
     public Agent findChampion() {
 
-        if (!this.isGifted) {
-            Agent champion = new Agent(0, this.getPerformances().size(), this.myGroup);
+        Agent champion = null;
 
-            ArrayList<Agent> highers = new ArrayList<>();
-            int dSize = this.getPerformances().size();
-            for (Talent firstTalent : champion.getTalents()) {
-                firstTalent.setValue(1);
-            }
-            for (Belief firstBelief : champion.getBelieves()) {
-                firstBelief.setValue(0);
-            }
-            for (Agent agent : connectedList) {
-                if (agent.getScore() > this.score) {
-                    highers.add(agent);
+        for (int i = 0; i < connectedList.size(); i++) {
+            if (this.getScore() < connectedList.get(i).getScore()) {
+                if (champion == null) {
+                    champion = connectedList.get(i);
+                } else if (champion.getScore() < connectedList.get(i).getScore()) {
+                    champion = connectedList.get(i);
                 }
             }
-            for (Agent higher : highers) {
-                for (int i = 0; i < dSize; i++) {
-                    champion.setBelief(i, champion.getBelief(i).getValue() + higher.getBelief(i).getValue());
-                }
-            }
-            for (int i = 0; i < dSize; i++) {
-                if (champion.getBelief(i).getValue() > highers.size() / 2) {
-                    champion.setBelief(i, 1);
-                } else {
-                    champion.setBelief(i, 0);
-                }
-            }
-            return champion;
-        } else {
-
-
-            Agent champion = null;
-
-            for (int i = 0; i < connectedList.size(); i++) {
-                if (this.getScore() < connectedList.get(i).getScore()) {
-                    if (champion == null) {
-                        champion = connectedList.get(i);
-                    } else if (champion.getScore() < connectedList.get(i).getScore()) {
-                        champion = connectedList.get(i);
-                    }
-                }
-            }
-            return champion;
         }
+        return champion;
     }
 
 
