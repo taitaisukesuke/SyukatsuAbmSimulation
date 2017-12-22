@@ -18,7 +18,7 @@ public class Main{
     public static final int AGENT_NUM_IN_AGENT_GROUP=12;
     public static final float BETA = 0.3f;
     public static final int UPDATE_NUM =100;
-    public static final int gyomuNum = 300;
+    public static final int gyomuNum = 100;
 
     private AgentGroup[] agentGroups;
     private final Company company;
