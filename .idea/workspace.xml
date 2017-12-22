@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1609e98c-4475-4da6-98ac-af91ad4da758" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/output/両分散,-1,1/多血.xlsm" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/output/両分散,-1,1/highest.xlsm" afterPath="$PROJECT_DIR$/src/output/両分散,-1,1/highest.xlsm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/output/両分散,-1,1/能力.xlsm" afterPath="$PROJECT_DIR$/src/output/両分散,-1,1/能力.xlsm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/output/両分散,-1,1/近い.xlsm" afterPath="$PROJECT_DIR$/src/output/両分散,-1,1/近い.xlsm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Agent.java" afterPath="$PROJECT_DIR$/src/Agent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Appeal.java" afterPath="$PROJECT_DIR$/src/Appeal.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/AgentComparator.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/1223new/Agent.class" afterPath="$PROJECT_DIR$/out/production/1223new/Agent.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/1223new/Main.class" afterPath="$PROJECT_DIR$/out/production/1223new/Main.class" />
+      <change beforePath="$PROJECT_DIR$/src/Agent.java" afterPath="$PROJECT_DIR$/src/Agent.java" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/output/000macro.xlsm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/output/highest.xlsm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/output/論理積.xlsm" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,12 +30,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="900">
-      <file leaf-file-name="Agent.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Agent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Agent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2805">
-              <caret line="209" column="39" lean-forward="true" selection-start-line="209" selection-start-column="39" selection-end-line="209" selection-end-column="39" />
-              <folding />
+            <state relative-caret-position="18">
+              <caret line="226" column="13" lean-forward="false" selection-start-line="226" selection-start-column="13" selection-end-line="226" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#290#303#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#840#841#0" expanded="true" />
+                <element signature="e#1069#1070#0" expanded="true" />
+                <element signature="e#1141#1142#0" expanded="true" />
+                <element signature="e#1351#1352#0" expanded="true" />
+                <element signature="e#1419#1420#0" expanded="true" />
+                <element signature="e#1468#1469#0" expanded="true" />
+                <element signature="e#1534#1535#0" expanded="true" />
+                <element signature="e#1715#1716#0" expanded="true" />
+                <element signature="e#1771#1772#0" expanded="true" />
+                <element signature="e#2244#2245#0" expanded="true" />
+                <element signature="e#2288#2289#0" expanded="true" />
+                <element signature="e#8681#8682#0" expanded="true" />
+                <element signature="e#8725#8726#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,33 +60,13 @@
       <file leaf-file-name="AgentGroup.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AgentGroup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
               <folding>
-                <marker date="1513670461000" expanded="true" signature="452:486" ph="{...}" />
-                <marker date="1513670461000" expanded="false" signature="527:538" ph=" { " />
-                <marker date="1513670461000" expanded="false" signature="552:558" ph=" }" />
-                <marker date="1513670461000" expanded="false" signature="588:599" ph=" { " />
-                <marker date="1513670461000" expanded="false" signature="616:622" ph=" }" />
-                <marker date="1513670461000" expanded="false" signature="649:660" ph=" { " />
-                <marker date="1513670461000" expanded="false" signature="672:678" ph=" }" />
-                <marker date="1513670461000" expanded="false" signature="701:712" ph=" { " />
-                <marker date="1513670461000" expanded="false" signature="722:728" ph=" }" />
-                <marker date="1513670461000" expanded="true" signature="782:1257" ph="{...}" />
-                <marker date="1513670461000" expanded="true" signature="1293:1477" ph="{...}" />
-                <marker date="1513670461000" expanded="true" signature="1550:1638" ph="{...}" />
-                <marker date="1513670461000" expanded="true" signature="1690:1872" ph="{...}" />
+                <element signature="e#528#529#0" expanded="true" />
+                <element signature="e#557#558#0" expanded="true" />
+                <marker date="1513684795757" expanded="true" signature="452:486" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Belief.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Belief.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -74,7 +74,7 @@
       <file leaf-file-name="Company.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Company.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
+            <state relative-caret-position="570">
               <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
               <folding />
             </state>
@@ -85,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/src/Performance.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+              <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
               <folding>
                 <element signature="e#295#296#0" expanded="true" />
                 <element signature="e#324#325#0" expanded="true" />
@@ -97,8 +97,8 @@
       <file leaf-file-name="Talent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Talent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state relative-caret-position="90">
+              <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -107,28 +107,30 @@
       <file leaf-file-name="Appeal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Appeal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="180">
+              <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Indicator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Indicator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="347">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AgentComparator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AgentComparator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -137,14 +139,21 @@
       <file leaf-file-name="Confidence.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Confidence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state relative-caret-position="90">
+              <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -159,9 +168,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/Confidence.java" />
         <option value="$PROJECT_DIR$/src/Talent.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Appeal.java" />
+        <option value="$PROJECT_DIR$/src/AgentComparator.java" />
         <option value="$PROJECT_DIR$/src/Agent.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -171,11 +181,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="23" />
-    <option name="y" value="27" />
-    <option name="width" value="1295" />
-    <option name="height" value="764" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="100" />
+    <option name="y" value="37" />
+    <option name="width" value="1340" />
+    <option name="height" value="665" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -193,18 +203,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="SyukatsuAbmSimulation" type="58d84e3e:PackageViewProjectNode" />
-              <item name="1223new" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="Scratches">
         <subPane>
           <expand>
@@ -221,23 +220,40 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="SyukathuABM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SyukathuABM" type="462c0819:PsiDirectoryNode" />
+              <item name="SyukatsuAbmSimulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SyukatsuAbmSimulation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SyukathuABM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SyukathuABM" type="462c0819:PsiDirectoryNode" />
+              <item name="SyukatsuAbmSimulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SyukatsuAbmSimulation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SyukatsuAbmSimulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SyukatsuAbmSimulation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SyukatsuAbmSimulation" type="58d84e3e:PackageViewProjectNode" />
+              <item name="1223new" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,7 +272,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -270,13 +293,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="1223new" />
       <envs />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -312,12 +328,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -352,6 +362,12 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
     <recent_temporary>
       <list size="1">
         <item index="0" class="java.lang.String" itemvalue="Application.Main" />
@@ -360,6 +376,9 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -377,14 +396,15 @@
       <workItem from="1513661794796" duration="441000" />
       <workItem from="1513665484579" duration="2637000" />
       <workItem from="1513676994163" duration="1540000" />
+      <workItem from="1513920313183" duration="2760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18489000" />
+    <option name="totallyTimeSpent" value="23767000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="23" y="27" width="1295" height="764" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -396,11 +416,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26589596" sideWeight="0.50301206" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44508672" sideWeight="0.49698794" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44498187" sideWeight="0.49698794" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1938224" sideWeight="0.4970458" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18240343" sideWeight="0.4970458" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -469,7 +489,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/visualize/Cell.java" />
     <entry file="file://$PROJECT_DIR$/src/visualize/TriangleCell.java" />
     <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.graphics/javafx/scene/shape/Rectangle.java" />
     <entry file="file://$PROJECT_DIR$/src/visualize/CellType.java" />
@@ -557,13 +576,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/function/IntFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="34" column="52" lean-forward="false" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/function/IntFunction.java" />
     <entry file="file://$PROJECT_DIR$/out/production/1223new/Agent.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-383">
@@ -571,42 +584,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/net/URLClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4890">
-          <caret line="380" column="0" lean-forward="false" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/io/FileOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="273" column="60" lean-forward="true" selection-start-line="273" selection-start-column="60" selection-end-line="273" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4395">
-          <caret line="356" column="0" lean-forward="false" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Launcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3360">
-          <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/Random.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5220">
-          <caret line="387" column="0" lean-forward="false" selection-start-line="387" selection-start-column="0" selection-end-line="387" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/net/URLClassLoader.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/io/FileOutputStream.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Launcher.class" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/Random.java" />
     <entry file="file://$PROJECT_DIR$/src/Indicator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -615,50 +597,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AgentGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <marker date="1513670461000" expanded="true" signature="452:486" ph="{...}" />
-            <marker date="1513670461000" expanded="false" signature="527:538" ph=" { " />
-            <marker date="1513670461000" expanded="false" signature="552:558" ph=" }" />
-            <marker date="1513670461000" expanded="false" signature="588:599" ph=" { " />
-            <marker date="1513670461000" expanded="false" signature="616:622" ph=" }" />
-            <marker date="1513670461000" expanded="false" signature="649:660" ph=" { " />
-            <marker date="1513670461000" expanded="false" signature="672:678" ph=" }" />
-            <marker date="1513670461000" expanded="false" signature="701:712" ph=" { " />
-            <marker date="1513670461000" expanded="false" signature="722:728" ph=" }" />
-            <marker date="1513670461000" expanded="true" signature="782:1257" ph="{...}" />
-            <marker date="1513670461000" expanded="true" signature="1293:1477" ph="{...}" />
-            <marker date="1513670461000" expanded="true" signature="1550:1638" ph="{...}" />
-            <marker date="1513670461000" expanded="true" signature="1690:1872" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Performance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding>
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Confidence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state relative-caret-position="90">
+          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Company.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
+        <state relative-caret-position="570">
           <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
           <folding />
         </state>
@@ -674,33 +623,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Appeal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="180">
+          <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Talent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state relative-caret-position="90">
+          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/AgentGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding>
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+            <marker date="1513684795757" expanded="true" signature="452:486" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Performance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AgentComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Agent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2805">
-          <caret line="209" column="39" lean-forward="true" selection-start-line="209" selection-start-column="39" selection-end-line="209" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="18">
+          <caret line="226" column="13" lean-forward="false" selection-start-line="226" selection-start-column="13" selection-end-line="226" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#290#303#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#1069#1070#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#1351#1352#0" expanded="true" />
+            <element signature="e#1419#1420#0" expanded="true" />
+            <element signature="e#1468#1469#0" expanded="true" />
+            <element signature="e#1534#1535#0" expanded="true" />
+            <element signature="e#1715#1716#0" expanded="true" />
+            <element signature="e#1771#1772#0" expanded="true" />
+            <element signature="e#2244#2245#0" expanded="true" />
+            <element signature="e#2288#2289#0" expanded="true" />
+            <element signature="e#8681#8682#0" expanded="true" />
+            <element signature="e#8725#8726#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
