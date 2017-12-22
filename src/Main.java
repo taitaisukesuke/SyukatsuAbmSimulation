@@ -11,6 +11,8 @@ import java.util.*;
 import java.util.function.IntFunction;
 import java.util.stream.Collectors;
 
+
+
 public class Main{
     public static final int AGENT_GROUP_NUM = 10;
     public static final int AGENT_NUM_IN_AGENT_GROUP=12;
@@ -27,22 +29,23 @@ public class Main{
     private  String outputpath="output/";
 
     public static void main(String[] args) {
-        Main main = new Main(AGENT_GROUP_NUM,AGENT_NUM_IN_AGENT_GROUP,BETA);
+        Main main = new Main(AGENT_GROUP_NUM, AGENT_NUM_IN_AGENT_GROUP, BETA);
 
         System.out.println("start to create network");
         main.createNetwork();
+        main.judgeConfidenceOrtalent();
 
 
 
+            for (int j = 0; j < UPDATE_NUM; j++) {
+                System.out.println("start learning");
+                main.Learning();
 
-        for(int i = 0;i<UPDATE_NUM;i++){
-            System.out.println("start learning");
-            main.Learning();
-
-            System.out.println("start evaluating");
-            main.eval();
+                System.out.println("start evaluating");
+                main.eval();
+            }
         }
-    }
+
 
     Main(int agentGroupNum,int agentNum,float beta){
         Date d = new Date();
@@ -111,6 +114,23 @@ public class Main{
                 }
             }
         }
+    }
+
+    private void judgeConfidenceOrtalent(){
+        ArrayList<Agent> allAgents=new ArrayList<>();
+
+        for(int i=0;i<AGENT_GROUP_NUM;i++){
+            for(int j=0;j<AGENT_NUM_IN_AGENT_GROUP;j++){
+                allAgents.add(agentGroups[i].getAgents().get(j));
+            }
+        }
+
+        Collections.sort(allAgents,new AgentComparator());
+
+        for (int i=0;i<allAgents.size()/2;i++){
+            allAgents.get(i).setGifted(false);
+        }
+
     }
 
     public void Learning(){
