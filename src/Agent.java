@@ -229,6 +229,9 @@ public class Agent {
 
             ArrayList<Agent> highers = new ArrayList<>();
             int dSize = this.getPerformances().size();
+            for (Talent firstTalent : champion.getTalents()) {
+                firstTalent.setValue(1);
+            }
             for (Belief firstBelief : champion.getBelieves()) {
                 firstBelief.setValue(0);
             }
