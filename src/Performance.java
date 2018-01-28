@@ -10,19 +10,18 @@ public class Performance {
     public Appeal getAppeal() {
         return appeal;
     }
-    public Talent getTalent() {
-        return talent;
-    }
-    public int getValue() {
-        return  appeal.getValue()*talent.getValue();
-    }
-
     public void setAppeal(Appeal appeal) {
         this.appeal = appeal;
     }
-
-    public void setBelief(Belief belief){
-        this.appeal.setBelief(belief);
+    public Talent getTalent() {
+        return talent;
     }
+//    public int getValue() {
+//        return  appeal.getValue()*talent.getValue();
+//    }
+
+//    public void setBelief(Belief belief){
+//        this.appeal.setBelief(belief);
+//    }
 
 }

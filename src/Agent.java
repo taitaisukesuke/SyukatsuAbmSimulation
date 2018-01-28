@@ -24,25 +24,25 @@ public class Agent {
         }
     }
 
-    public List<Confidence> getConfidences() {
-        return performances.stream().map(performance -> performance.getAppeal().getConfidence()).collect(Collectors.toList());
-    }
-
-    public Confidence getConfidence(int num){
-        return performances.get(num).getAppeal().getConfidence();
-    }
-
-    public List<Belief> getBelieves() {
-        return performances.stream().map(performance -> performance.getAppeal().getBelief()).collect(Collectors.toList());
-    }
-
-    public Belief getBelief(int num){
-        return performances.get(num).getAppeal().getBelief();
-    }
-
-    public void setBelief(int num,int value){
-        performances.get(num).setBelief(new Belief(value));
-    }
+//    public List<Confidence> getConfidences() {
+//        return performances.stream().map(performance -> performance.getAppeal().getConfidence()).collect(Collectors.toList());
+//    }
+//
+//    public Confidence getConfidence(int num){
+//        return performances.get(num).getAppeal().getConfidence();
+//    }
+//
+//    public List<Belief> getBelieves() {
+//        return performances.stream().map(performance -> performance.getAppeal().getBelief()).collect(Collectors.toList());
+//    }
+//
+//    public Belief getBelief(int num){
+//        return performances.get(num).getAppeal().getBelief();
+//    }
+//
+//    public void setBelief(int num,int value){
+//        performances.get(num).setBelief(new Belief(value));
+//    }
 
     public List<Talent> getTalents() {
         return performances.stream().map(Performance::getTalent).collect(Collectors.toList());
@@ -52,6 +52,14 @@ public class Agent {
 
     public List<Appeal> getAppeals() {
         return performances.stream().map(Performance::getAppeal).collect(Collectors.toList());
+    }
+
+    public Appeal getAppeal(int num){
+        return performances.get(num).getAppeal();
+    }
+
+    public void setAppeal(int num,int value){
+        performances.get(num).setAppeal(new Appeal(value));
     }
 
     public List<Performance> getPerformances() {
@@ -102,38 +110,38 @@ public class Agent {
         }
     }
 
-    public int sumConfidences(){
-        int sumConfidences = 0;
-        for(Confidence confidence : this.getConfidences()){
-            sumConfidences += confidence.getValue();
-        }
-        return sumConfidences;
-    }
+//    public int sumConfidences(){
+//        int sumConfidences = 0;
+//        for(Confidence confidence : this.getConfidences()){
+//            sumConfidences += confidence.getValue();
+//        }
+//        return sumConfidences;
+//    }
 
     public void updateMyBelieves(){
         Agent champion = findChampion();
         if(champion!=null){
-            int sumConfidences = this.sumConfidences();
-            double learningProb = (double) sumConfidences / this.getConfidences().size();
-            System.out.println(learningProb);
+//            int sumConfidences = this.sumConfidences();
+//            double learningProb = (double) sumConfidences / this.getConfidences().size();
+//            System.out.println(learningProb);
             //ForTest
-            int count = 0;
+//            int count = 0;
 
-            for(int index = 0;index< this.getConfidences().size();index++){
+            for(int index = 0;index< this.getAppeals().size();index++){
                 double p = Math.random();
 
-                if( p >= learningProb ){
-                    if (champion.getTalent(index).getValue() == 1 && champion.getBelief(index).getValue() == 1) {
-                        this.setBelief(index,1);
-                        count++;
-                    }else if(champion.getTalent(index).getValue() == -1 && champion.getBelief(index).getValue() == 1) {
-                        this.setBelief(index,0);
-                        count++;
+//                if( p >= learningProb ){
+                    if (champion.getTalent(index).getValue() == 1 && champion.getAppeal(index).getValue() == 1) {
+                        this.setAppeal(index,1);
+//                        count++;
+                    }else if(champion.getTalent(index).getValue() == -1 && champion.getAppeal(index).getValue() == 0) {
+                        this.setAppeal(index,0);
+//                        count++;
                     }
-                }
+//                }
             }
 
-            System.out.println(count+"個アップデート");
+//            System.out.println(count+"個アップデート");
         }
 
     }

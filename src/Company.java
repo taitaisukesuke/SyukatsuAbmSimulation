@@ -19,7 +19,7 @@ class Company{
         int result =0;
         for(int i=0;i<this.indicators.length;i++)
         {
-            result=result+ indicators[i].evaluate(agent.getPerformances().get(i));
+            result += indicators[i].evaluate(agent.getPerformances().get(i));
         }
 
         System.out.print("groupId:" +agent.getMyGroup().getId()+"agentId: "+agent.getAgentId());
@@ -27,20 +27,19 @@ class Company{
         agent.setScore(result);
         return result;
     }
-    public int evaluateTalent(Agent agent){
-        int result =0;
-
-
-        for(int i=0;i<this.indicators.length;i++)
-        {
-            result=result+ indicators[i].evaluateTalent(agent.getPerformances().get(i));
-        }
-
-        System.out.print("groupId:" +agent.getMyGroup().getId()+"agentId: "+agent.getAgentId());
-        System.out.print(" talent_result: " + result);
-        return result;
-
-    }
+//    public int evaluateTalent(Agent agent){
+//        int result =0;
+//
+//
+//        for(int i=0;i<this.indicators.length;i++)
+//        {
+//            result += indicators[i].evaluateTalent(agent.getPerformances().get(i));
+//        }
+//
+//        System.out.print("groupId:" +agent.getMyGroup().getId()+"agentId: "+agent.getAgentId());
+//        System.out.print(" talent_result: " + result);
+//        return result;
+//    }
 
 
 }
